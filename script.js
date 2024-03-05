@@ -71,6 +71,19 @@ function countLetter(str) {
   return -1;
 }
 
-console.log(countLetter("whats up guys of all time 1121"));
+// console.log(countLetter("whats up guys  1121"));
 
 // array sum
+
+function ArraySum(arr) {
+  let tempArr = arr.sort((a, b) => {
+    return a - b;
+  });
+
+  let getLagrest = tempArr.pop();
+
+  return getLagrest;
+}
+
+console.log(ArraySum([1, 6, 42, 6, 13]));
+console.log(ArraySum([1, 2, 4, 34, 22]));
