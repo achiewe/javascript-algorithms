@@ -28,10 +28,10 @@ function mathSequences(arr) {
     return "Arithmetic";
   }
   if (geo.size === 1) {
-    return "geo";
+    return "Geometric";
   }
 
   return -1;
 }
 
-console.log(mathSequences([2, 4, 6, 8]));
+console.log(mathSequences([10, 20, 30, 40]));
