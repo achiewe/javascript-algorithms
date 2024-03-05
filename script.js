@@ -82,7 +82,9 @@ function ArraySum(arr) {
 
   let getLagrest = tempArr.pop();
 
-  return getLagrest;
+  let num = 0;
+  tempArr.map((item) => (num += item));
+  return getLagrest === num;
 }
 
 console.log(ArraySum([1, 6, 42, 6, 13]));
