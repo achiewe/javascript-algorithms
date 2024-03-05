@@ -72,3 +72,5 @@ function countLetter(str) {
 }
 
 console.log(countLetter("whats up guys of all time 1121"));
+
+// array sum
