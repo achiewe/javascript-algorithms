@@ -14,17 +14,17 @@ function longestWord(str) {
 console.log(longestWord("vaa achi ravaxr"));
 
 function mathSequences(arr) {
-  let arithmetic = [];
-  let geo = [];
+  let arithmetic = new Set();
+  let geo = new Set();
 
   for (let i = 1; i < arr.length; i++) {
     let number1 = arr[i] - arr[i - 1];
-    arithmetic.push(number1);
+    arithmetic.add(number1);
     let number2 = arr[i] / arr[i - 1];
-    geo.push(number2);
+    geo.add(number2);
   }
-  console.log(`A : ${arithmetic}`);
-  console.log(`G : ${geo}`);
+  console.log(arithmetic);
+  console.log(geo);
   // return arr;
 }
 
