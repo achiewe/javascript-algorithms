@@ -110,4 +110,31 @@ function unique(str) {
 //return false ad = duplicate
 
 // get unique values in the array
-function getUnique(arr) {}
+
+let products = [
+  {
+    title: "ihone 7",
+    company: "apple",
+  },
+
+  {
+    title: "galaxy",
+    company: "samsung",
+  },
+
+  {
+    title: "iphone 8",
+    company: "apple",
+  },
+
+  {
+    title: "iphone Xs",
+    company: "apple",
+  },
+];
+
+function getUnique(arr) {
+  return arr;
+}
+
+console.log(getUnique(products));
