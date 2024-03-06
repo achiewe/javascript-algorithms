@@ -140,7 +140,7 @@ function getUnique(arr) {
 
   return [
     ...arr.reduce((acc, current) => {
-      acc.add(current);
+      acc.add(current.company);
       return acc;
     }, new Set()),
   ];
