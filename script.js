@@ -134,9 +134,16 @@ let products = [
 ];
 
 function getUnique(arr) {
-  let tempArr = arr.map((item) => item.company);
+  // let tempArr = arr.map((item) => item.company);
 
-  return [...new Set(tempArr)];
+  // return [...new Set(tempArr)];
+
+  return [
+    ...arr.reduce((acc, current) => {
+      acc.add(current);
+      return acc;
+    }, new Set()),
+  ];
 }
 
 console.log(getUnique(products));
