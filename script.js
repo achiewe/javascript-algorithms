@@ -146,4 +146,13 @@ function getUnique(arr) {
   ];
 }
 
-console.log(getUnique(products));
+// console.log(getUnique(products));
+
+function secondValue(arr) {
+  return arr;
+}
+
+console.log(secondValue([1]));
+console.log(secondValue([4, 2]));
+console.log(secondValue([11, 44, 22]));
+console.log(secondValue([3, 2, 88, 3, -11]));
