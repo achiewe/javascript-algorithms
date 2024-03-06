@@ -91,9 +91,18 @@ function ArraySum(arr) {
 // console.log(ArraySum([1, 2, 4, 34, 22]));
 
 function unique(str) {
+  let tempStr = new Set();
+
+  for (let letter of str) {
+    if (tempStr.has(letter)) {
+      return false;
+    }
+    tempStr.add(letter);
+  }
   return str;
 }
 
 console.log(unique("abcd"));
-
+//returns true
 console.log(unique("abcd"));
+//return false ad = duplicate
