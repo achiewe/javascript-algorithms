@@ -150,7 +150,13 @@ function getUnique(arr) {
 
 function secondValue(arr) {
   let values = [...new Set(arr)].sort((a, b) => a - b);
-  return values;
+  if (values.length < 2) {
+    return `${values[0]}`;
+  } else if (values.length === 2) {
+    return `${values[0]} ${values[1]}`;
+  } else {
+    return `${values[1]} ${values[values.length - 2]}`;
+  }
 }
 
 console.log(secondValue([1]));
