@@ -99,10 +99,10 @@ function unique(str) {
     }
     tempStr.add(letter);
   }
-  return str;
+  return true;
 }
 
 console.log(unique("abcd"));
 //returns true
-console.log(unique("abcd"));
+console.log(unique("abbc"));
 //return false ad = duplicate
