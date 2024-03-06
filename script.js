@@ -87,5 +87,13 @@ function ArraySum(arr) {
   return getLagrest === num;
 }
 
-console.log(ArraySum([1, 6, 42, 6, 13]));
-console.log(ArraySum([1, 2, 4, 34, 22]));
+// console.log(ArraySum([1, 6, 42, 6, 13]));
+// console.log(ArraySum([1, 2, 4, 34, 22]));
+
+function unique(str) {
+  return str;
+}
+
+console.log(unique("abcd"));
+
+console.log(unique("abcd"));
