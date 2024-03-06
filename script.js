@@ -104,7 +104,10 @@ function unique(str) {
   // return true;
 }
 
-console.log(unique("abcd"));
-//returns true
-console.log(unique("abbc"));
+// console.log(unique("abcd"));
+// //returns true
+// console.log(unique("abbc"));
 //return false ad = duplicate
+
+// get unique values in the array
+function getUnique(arr) {}
