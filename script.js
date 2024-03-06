@@ -149,7 +149,8 @@ function getUnique(arr) {
 // console.log(getUnique(products));
 
 function secondValue(arr) {
-  return arr;
+  let values = [...new Set(arr)].sort((a, b) => a - b);
+  return values;
 }
 
 console.log(secondValue([1]));
