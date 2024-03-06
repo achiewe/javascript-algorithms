@@ -136,7 +136,7 @@ let products = [
 function getUnique(arr) {
   let tempArr = arr.map((item) => item.company);
 
-  return tempArr;
+  return [...new Set(tempArr)];
 }
 
 console.log(getUnique(products));
