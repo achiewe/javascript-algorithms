@@ -182,6 +182,11 @@ function testRepeat(arr) {
       value = curr;
       position = place;
     }
+    if (amount === max && place <= position) {
+      max = amount;
+      value = curr;
+      position = place;
+    }
     return acc;
   }, {});
   return value;
