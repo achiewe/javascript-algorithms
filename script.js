@@ -159,7 +159,14 @@ function secondValue(arr) {
   }
 }
 
-console.log(secondValue([1]));
-console.log(secondValue([4, 2]));
-console.log(secondValue([11, 44, 22]));
-console.log(secondValue([3, 2, 88, 3, -11]));
+// console.log(secondValue([1]));
+// console.log(secondValue([4, 2]));
+// console.log(secondValue([11, 44, 22]));
+// console.log(secondValue([3, 2, 88, 3, -11]));
+
+// return number with most repeats
+function testRepeat(arr) {
+  return arr;
+}
+
+console.log(testRepeat([5, 2, 2, 1, 5]));
