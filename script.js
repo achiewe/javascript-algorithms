@@ -166,14 +166,25 @@ function secondValue(arr) {
 
 // return number with most repeats
 function testRepeat(arr) {
+  let max = 1;
+  let position = 0;
+  let value = -1;
+
   let tempNumb = arr.reduce((acc, curr, index) => {
     acc[curr] = acc[curr]
       ? { ...acc[curr], amount: acc[curr]["amount"] + 1 }
       : { amount: 1, index };
 
+    let amount = acc[curr].amount;
+    let place = acc[curr].index;
+    if (amount > max) {
+      max = amount;
+      value = curr;
+      position = place;
+    }
     return acc;
   }, {});
-  return tempNumb;
+  return value;
 }
 
 console.log(testRepeat([5, 2, 2, 1, 5]));
