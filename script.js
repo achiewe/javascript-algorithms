@@ -177,16 +177,12 @@ function testRepeat(arr) {
 
     let amount = acc[curr].amount;
     let place = acc[curr].index;
-    if (amount > max) {
+    if (amount > max || (amount === max && place <= position && amount > 1)) {
       max = amount;
       value = curr;
       position = place;
     }
-    if (amount === max && place <= position) {
-      max = amount;
-      value = curr;
-      position = place;
-    }
+
     return acc;
   }, {});
   return value;
