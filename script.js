@@ -296,17 +296,7 @@ function sumAll(arr) {
 // console.log(sumAll([4, 4]));
 
 function diffArray(arr1, arr2) {
-  const union = [];
-  for (const el of arr1) {
-    if (!union.includes(el)) {
-      union.push(el);
-    }
-  }
-  for (const el of arr2) {
-    if (!union.includes(el)) {
-      union.push(el);
-    }
-  }
+  const union = new Set([...arr1, ...arr2]);
 
   const symDiff = [];
   for (const currentEl of union) {
