@@ -203,7 +203,11 @@ function isPrime(num) {
     return false;
   }
   // modulus %
-  for (let i = 2; i < num; i++) {
+
+  let root = Math.ceil(Math.sqrt(num));
+  console.log(root);
+
+  for (let i = 2; i <= root; i++) {
     if (num % i === 0) {
       return false;
     }
@@ -213,6 +217,10 @@ function isPrime(num) {
 }
 
 console.log(isPrime(8));
+//false
 console.log(isPrime(11));
+//true
 console.log(isPrime(121));
+//false
 console.log(isPrime(127));
+//true
