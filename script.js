@@ -239,9 +239,14 @@ const items = {
 };
 
 let appState = "loading";
+appState = "error";
+
+const keyName = "computer";
 
 const app = {
   [appState]: true,
 };
+
+app[keyName] = "apple";
 
 console.log(app);
