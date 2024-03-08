@@ -250,3 +250,15 @@ const app = {
 app[keyName] = "apple";
 
 console.log(app);
+
+const state = {
+  loading: true,
+  name: "",
+  job: "",
+};
+
+function updateState(key, value) {
+  state[key] = value;
+}
+updateState("name", "john");
+console.log(state);
