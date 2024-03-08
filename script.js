@@ -198,6 +198,10 @@ function testRepeat(arr) {
 // prime number = can only divide evenly by itself or one
 // 11 / 2 = 5.5
 
-function isPrime(num) {
-  console.log(isPrime(8));
-}
+function isPrime(num) {}
+
+console.log(isPrime(8));
+console.log(isPrime(8));
+console.log(isPrime(8));
+console.log(isPrime(8));
+console.log(isPrime(8));
