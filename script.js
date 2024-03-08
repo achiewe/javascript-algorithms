@@ -261,4 +261,8 @@ function updateState(key, value) {
   state[key] = value;
 }
 updateState("name", "john");
-console.log(state);
+updateState("name", "developer");
+updateState("loading", false);
+updateState("producets", []);
+updateState("name", "peter");
+// console.log(state);
