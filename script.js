@@ -266,3 +266,20 @@ updateState("loading", false);
 updateState("producets", []);
 updateState("name", "peter");
 // console.log(state);
+
+// reduce to single value - number, array, object
+const staff = [
+  { name: "bob", age: 20, position: "developer", salary: 100 },
+  { name: "peter", age: 23, position: "designer", salary: 200 },
+  { name: "george", age: 22, position: "boss", salary: 300 },
+  { name: "bobby", age: 25, position: "intern", salary: 400 },
+];
+
+const dailyTotal = staff.reduce((total, person) => {
+  console.log(total);
+  console.log(person.salary);
+  total += person.salary;
+  return total;
+}, 0);
+
+console.log(dailyTotal);
