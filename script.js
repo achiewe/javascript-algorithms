@@ -195,9 +195,9 @@ function testRepeat(arr) {
 // console.log(testRepeat([3, 4, 1, 6, 10]));
 // //return -1;
 
-// string will not contain numbers or symbols only letter
-function countLetters(str) {
-  return str;
-}
+// prime number = can only divide evenly by itself or one
+// 11 / 2 = 5.5
 
-console.log(countLetters("fffeeerrrtttttooooo"));
+function isPrime(num) {
+  console.log(isPrime(8));
+}
