@@ -293,4 +293,20 @@ function sumAll(arr) {
   return sum;
 }
 
-console.log(sumAll([4, 4]));
+// console.log(sumAll([4, 4]));
+
+function diffArray(arr1, arr2) {
+  const union = [];
+  for (let i = 0; i < arr1.length; i++) {
+    if (!union.includes(arr1[i])) {
+      union.push(arr1[i]);
+    }
+  }
+  for (let i = 0; i < arr1.length; i++) {
+    if (!union.includes(arr2[i])) {
+      union.push(arr2[i]);
+    }
+  }
+}
+
+diffArray([1, 2, 3, 5, 6], [1, 2, 3, 4, 5]);
