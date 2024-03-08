@@ -297,20 +297,19 @@ function sumAll(arr) {
 
 function diffArray(arr1, arr2) {
   const union = [];
-  for (let i = 0; i < arr1.length; i++) {
-    if (!union.includes(arr1[i])) {
-      union.push(arr1[i]);
+  for (const el of arr1) {
+    if (!union.includes(el)) {
+      union.push(el);
     }
   }
-  for (let i = 0; i < arr1.length; i++) {
-    if (!union.includes(arr2[i])) {
-      union.push(arr2[i]);
+  for (const el of arr2) {
+    if (!union.includes(el)) {
+      union.push(el);
     }
   }
 
   const symDiff = [];
-  for (let i = 0; i < union.length; i++) {
-    const currentEl = union[i];
+  for (const currentEl of union) {
     if (arr1.includes(currentEl) && !arr2.includes(currentEl)) {
       symDiff.push(currentEl);
     } else if (arr2.includes(currentEl) && !arr1.includes(currentEl)) {
@@ -321,4 +320,4 @@ function diffArray(arr1, arr2) {
   return symDiff;
 }
 
-diffArray([1, 2, 3, 5, 6], [1, 2, 3, 4, 5]);
+console.log(diffArray([1, 2, 3, 5, 6], [1, 2, 3, 4, 5]));
