@@ -313,8 +313,12 @@ function diffArray(arr1, arr2) {
     const currentEl = union[i];
     if (arr1.includes(currentEl) && !arr2.includes(currentEl)) {
       symDiff.push(currentEl);
+    } else if (arr2.includes(currentEl) && !arr1.includes(currentEl)) {
+      symDiff.push(currentEl);
     }
   }
+
+  return symDiff;
 }
 
 diffArray([1, 2, 3, 5, 6], [1, 2, 3, 4, 5]);
