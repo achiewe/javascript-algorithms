@@ -307,6 +307,14 @@ function diffArray(arr1, arr2) {
       union.push(arr2[i]);
     }
   }
+
+  const symDiff = [];
+  for (let i = 0; i < union.length; i++) {
+    const currentEl = union[i];
+    if (arr1.includes(currentEl) && !arr2.includes(currentEl)) {
+      symDiff.push(currentEl);
+    }
+  }
 }
 
 diffArray([1, 2, 3, 5, 6], [1, 2, 3, 4, 5]);
