@@ -225,9 +225,23 @@ function isPrime(num) {
 // console.log(isPrime(127));
 // //true
 
+// dot notation
 const person = {
   name: "john",
 };
 
 console.log(person.name);
 console.log(person);
+
+//square brackets notation
+const items = {
+  "featire-items": ["item1", "item2"],
+};
+
+let appState = "loading";
+
+const app = {
+  [appState]: true,
+};
+
+console.log(app);
