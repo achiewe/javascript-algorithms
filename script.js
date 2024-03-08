@@ -216,11 +216,18 @@ function isPrime(num) {
   return true;
 }
 
-console.log(isPrime(8));
-//false
-console.log(isPrime(11));
-//true
-console.log(isPrime(121));
-//false
-console.log(isPrime(127));
-//true
+// console.log(isPrime(8));
+// //false
+// console.log(isPrime(11));
+// //true
+// console.log(isPrime(121));
+// //false
+// console.log(isPrime(127));
+// //true
+
+const person = {
+  name: "john",
+};
+
+console.log(person.name);
+console.log(person);
