@@ -334,6 +334,8 @@ function smallestCommons(arr) {
 
     if (isScm) {
       return scm;
+    } else {
+      scm++;
     }
   }
 }
