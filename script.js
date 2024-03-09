@@ -323,6 +323,15 @@ function smallestCommons(arr) {
   }
 
   let scm = big;
+  while (true) {
+    let isScm = true;
+    for (let i = small; i <= big; i++) {
+      if (scm % i != 0) {
+        isScm = false;
+        break;
+      }
+    }
+  }
 }
 
 smallestCommons([1, 5]);
