@@ -314,14 +314,7 @@ function diffArray(arr1, arr2) {
 
 function smallestCommons(arr) {
   let small = arr[0] > arr[1] ? arr[1] : arr[0];
-  let small, big;
-  if (arr[0] > arr[1]) {
-    big = arr[0];
-    small = arr[1];
-  } else {
-    big = arr[1];
-    small = arr[0];
-  }
+  let big = arr[0] > arr[1] ? arr[0] : arr[1];
 
   let scm = big;
   while (true) {
