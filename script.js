@@ -331,6 +331,10 @@ function smallestCommons(arr) {
         break;
       }
     }
+
+    if (isScm) {
+      return scm;
+    }
   }
 }
 
