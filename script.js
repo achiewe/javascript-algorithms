@@ -348,6 +348,11 @@ function dropElements(arr, func) {
       break;
     }
   }
+
+  if (trueIndex === -1) {
+    return [];
+  }
+
   return arr;
 }
 
