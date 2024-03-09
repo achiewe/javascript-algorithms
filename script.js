@@ -313,6 +313,7 @@ function diffArray(arr1, arr2) {
 // console.log(diffArray([1, 2, 3, 5, 6], [1, 2, 3, 4, 5]));
 
 function smallestCommons(arr) {
+  let small = arr[0] > arr[1] ? arr[1] : arr[0];
   let small, big;
   if (arr[0] > arr[1]) {
     big = arr[0];
@@ -340,5 +341,5 @@ function smallestCommons(arr) {
   }
 }
 
-smallestCommons([1, 5]);
+console.log(smallestCommons([1, 5]));
 // smallestCommons
