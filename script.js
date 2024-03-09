@@ -351,9 +351,9 @@ function dropElements(arr, func) {
 
   if (trueIndex === -1) {
     return [];
+  } else {
+    return arr.slice(trueIndex);
   }
-
-  return arr;
 }
 
 dropElements([1, 2, 3], function (n) {
