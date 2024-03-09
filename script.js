@@ -334,5 +334,13 @@ function smallestCommons(arr) {
   }
 }
 
-console.log(smallestCommons([1, 5]));
+// console.log(smallestCommons([1, 5]));
 // smallestCommons
+
+function dropElements(arr, func) {
+  return arr;
+}
+
+dropElements([1, 2, 3], function (n) {
+  return n < 3;
+});
