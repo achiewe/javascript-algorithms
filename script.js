@@ -338,6 +338,16 @@ function smallestCommons(arr) {
 // smallestCommons
 
 function dropElements(arr, func) {
+  let trueIndex = -1;
+
+  for (let i = 0; i < arr.length; i++) {
+    const el = arr[i];
+
+    if (func(el)) {
+      trueIndex = i;
+      break;
+    }
+  }
   return arr;
 }
 
