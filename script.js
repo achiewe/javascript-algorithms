@@ -473,7 +473,19 @@ const converter = {
 };
 
 function convertRoman(num) {
-  return num;
+  let output = "";
+  let i = 0;
+
+  while (num > 0) {
+    const subtract = numbers[i];
+    if (subtract > num) {
+      i++;
+    } else {
+      num -= subtract;
+      output += converter[subtract];
+    }
+  }
+  return output;
 }
 
-convertRoman(36);
+console.log(convertRoman(36));
