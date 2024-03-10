@@ -434,4 +434,15 @@ function sumFibs(num) {
   return sum;
 }
 
-console.log(sumFibs(4));
+// console.log(sumFibs(4));
+
+function truthCkeck(coll, pre) {
+  return pre;
+}
+
+truthCkeck([
+  { user: "tinky-Winky", sex: "male" },
+  { user: "Dipsy", sex: "male" },
+  { user: "Laa-Laa", sex: "female" },
+  { user: "Po", sex: "female" },
+]);
