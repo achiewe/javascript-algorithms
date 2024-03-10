@@ -359,3 +359,11 @@ function dropElements(arr, func) {
 dropElements([1, 2, 3], function (n) {
   return n < 3;
 });
+
+// caesars cipher, freecodecamp challenge
+
+function rot13(str) {
+  return str;
+}
+
+rot13();
