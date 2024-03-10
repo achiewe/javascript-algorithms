@@ -437,7 +437,12 @@ function sumFibs(num) {
 // console.log(sumFibs(4));
 
 function truthCkeck(coll, pre) {
-  return pre;
+  let isTurthy = true;
+  for (const obj of coll) {
+    if (obj[pre]) {
+    } else {
+    }
+  }
 }
 
 truthCkeck([
