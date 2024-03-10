@@ -362,16 +362,24 @@ dropElements([1, 2, 3], function (n) {
 
 // caesars cipher, freecodecamp challenge
 
+const A_CODE = "A".charCodeAt(0);
+
 function rot13(str) {
   let output = "";
 
   for (const c of str) {
-    if (/[A-Z]/.test(c)) {
+    if (!/[A-Z]/.test(c)) {
       output += c;
     } else {
+      let code = c.charCodeAt(0);
+      code -= 13;
+      if (code > A_CODE) {
+        code += 26;
+      }
+      output += String.fromCharCode(code);
     }
   }
-  return str;
+  return output;
 }
 
-rot13("BSERR PBQR PNZC");
+console.log(rot13("BSERR PBQR PNZC"));
