@@ -415,4 +415,10 @@ function pairElement(str) {
   return output;
 }
 
-console.log(pairElement("GCG"));
+// console.log(pairElement("GCG"));
+
+function sumFibs(num) {
+  return num;
+}
+
+sumFibs(4);
