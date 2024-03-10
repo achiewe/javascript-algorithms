@@ -363,7 +363,15 @@ dropElements([1, 2, 3], function (n) {
 // caesars cipher, freecodecamp challenge
 
 function rot13(str) {
+  let output = "";
+
+  for (const c of str) {
+    if (/[A-Z]/.test(c)) {
+      output += c;
+    } else {
+    }
+  }
   return str;
 }
 
-rot13();
+rot13("BSERR PBQR PNZC");
