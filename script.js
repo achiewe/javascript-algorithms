@@ -386,9 +386,17 @@ function rot13(str) {
 
 function bubbleSort(arr) {
   for (i = 0; i < arr.length - 1; i++) {
-    for (let j = 0; j < arr.length - 1 - i; j++) {}
+    for (let j = 0; j < arr.length - 1 - i; j++) {
+      if (arr[j] > arr[j + 1]) {
+        const temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
   }
   return arr;
 }
 
-bubbleSort([1, 4, 8, 345, 123, 43, 32, 5643, 63, 123, 43, 2, 55, 1, 234]);
+console.log(
+  bubbleSort([1, 4, 8, 345, 123, 43, 32, 5643, 63, 123, 43, 2, 55, 1, 234])
+);
