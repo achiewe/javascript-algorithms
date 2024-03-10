@@ -385,6 +385,9 @@ function rot13(str) {
 // console.log(rot13("BSERR PBQR PNZC"));
 
 function bubbleSort(arr) {
+  for (i = 0; i < arr.length - 1; i++) {
+    for (let j = 0; j < arr.length - 1 - i; j++) {}
+  }
   return arr;
 }
 
