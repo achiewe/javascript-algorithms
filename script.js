@@ -439,10 +439,12 @@ function sumFibs(num) {
 function truthCkeck(coll, pre) {
   let isTurthy = true;
   for (const obj of coll) {
-    if (obj[pre]) {
-    } else {
+    if (!obj[pre]) {
+      isTurthy = false;
+      break;
     }
   }
+  return isTurthy;
 }
 
 truthCkeck([
