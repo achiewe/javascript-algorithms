@@ -395,6 +395,12 @@ function bubbleSort(arr) {
   return arr;
 }
 
-console.log(
-  bubbleSort([1, 4, 8, 345, 123, 43, 32, 5643, 63, 123, 43, 2, 55, 1, 234])
-);
+// console.log(
+//   bubbleSort([1, 4, 8, 345, 123, 43, 32, 5643, 63, 123, 43, 2, 55, 1, 234])
+// );
+
+function pairElement(str) {
+  return str;
+}
+
+pairElement("GCG");
