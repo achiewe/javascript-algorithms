@@ -418,17 +418,20 @@ function pairElement(str) {
 // console.log(pairElement("GCG"));
 
 function sumFibs(num) {
-  let sum = 0;
-
   let a = 1;
   let b = 1;
 
+  let sum = a;
 
-  while(b <= num){
-    if(b % 2 !== 0)
+  while (b <= num) {
+    if (b % 2 !== 0) {
+      sum += b;
+    }
+    let temp = b;
+    b = a + b;
+    a = temp;
   }
   return sum;
 }
 
-sumFibs(4);
-
+console.log(sumFibs(4));
