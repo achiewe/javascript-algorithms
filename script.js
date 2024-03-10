@@ -446,11 +446,17 @@ function truthCkeck(coll, pre) {
   return isTurthy;
 }
 
-console.log(
-  truthCkeck([
-    { user: "tinky-Winky", sex: "male" },
-    { user: "Dipsy", sex: "male" },
-    { user: "Laa-Laa", sex: "female" },
-    { user: "Po", sex: "female" },
-  ])
-);
+// console.log(
+//   truthCkeck([
+//     { user: "tinky-Winky", sex: "male" },
+//     { user: "Dipsy", sex: "male" },
+//     { user: "Laa-Laa", sex: "female" },
+//     { user: "Po", sex: "female" },
+//   ])
+// );
+
+function convertRoman(num) {
+  return num;
+}
+
+convertRoman(36);
