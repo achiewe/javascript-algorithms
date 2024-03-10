@@ -418,7 +418,12 @@ function pairElement(str) {
 // console.log(pairElement("GCG"));
 
 function sumFibs(num) {
-  return num;
+  let sum = 0;
+
+  let a = 1;
+  let b = 1;
+
+  return sum;
 }
 
 sumFibs(4);
