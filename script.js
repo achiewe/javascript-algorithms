@@ -382,4 +382,10 @@ function rot13(str) {
   return output;
 }
 
-console.log(rot13("BSERR PBQR PNZC"));
+// console.log(rot13("BSERR PBQR PNZC"));
+
+function bubbleSort(arr) {
+  return arr;
+}
+
+bubbleSort([1, 4, 8, 345, 123, 43, 32, 5643, 63, 123, 43, 2, 55, 1, 234]);
