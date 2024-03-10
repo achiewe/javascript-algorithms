@@ -400,6 +400,10 @@ function bubbleSort(arr) {
 // );
 
 function pairElement(str) {
+  for (const c of str) {
+    if (c === "A") {
+    }
+  }
   return str;
 }
 
