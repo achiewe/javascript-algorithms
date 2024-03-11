@@ -528,6 +528,7 @@ function isPowerOfTwo(n) {
     }
     n = n / 2;
   }
+  return true;
 }
 
 console.log(isPowerOfTwo(1));
