@@ -535,7 +535,11 @@ function isPowerOfTwo(n) {
 // console.log(isPowerOfTwo(2));
 // console.log(isPowerOfTwo(5));
 
-function climbingStaircase(n) {}
+function climbingStaircase(n) {
+  const nOfWays = [1, 2];
+
+  return nOfWays[n];
+}
 
 console.log(climbingStaircase(1));
 
