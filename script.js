@@ -555,3 +555,5 @@ var chunk = function (arr, size) {
     res.push(arr.slice(i, i + size));
   }
 };
+
+function objDiff(obj1, obj2) {}
