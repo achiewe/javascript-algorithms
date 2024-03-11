@@ -503,4 +503,10 @@ function orbitalPeriod(arr) {
   });
 }
 
-console.log(orbitalPeriod([{ name: "sputnik", avgAlt: 35873.5553 }]));
+// console.log(orbitalPeriod([{ name: "sputnik", avgAlt: 35873.5553 }]));
+
+function factorial(n) {}
+
+console.log(factorial(0));
+console.log(factorial(1));
+console.log(factorial(5));
