@@ -505,7 +505,13 @@ function orbitalPeriod(arr) {
 
 // console.log(orbitalPeriod([{ name: "sputnik", avgAlt: 35873.5553 }]));
 
-function factorial(n) {}
+function factorial(n) {
+  let result = 1;
+  for (let i = 2; i <= n; i++) {
+    result = result * i;
+  }
+  return result;
+}
 
 console.log(factorial(0));
 console.log(factorial(1));
