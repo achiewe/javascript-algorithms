@@ -548,3 +548,10 @@ function climbingStaircase(n) {
 // console.log(climbingStaircase(3));
 // console.log(climbingStaircase(4));
 // console.log(climbingStaircase(5));
+
+var chunk = function (arr, size) {
+  const res = [];
+  for (let i = 0; i < arr.length; i += size) {
+    arr.slice(i, i + size);
+  }
+};
