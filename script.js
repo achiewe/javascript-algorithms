@@ -513,6 +513,12 @@ function factorial(n) {
   return result;
 }
 
-console.log(factorial(0));
-console.log(factorial(1));
-console.log(factorial(5));
+// console.log(factorial(0));
+// console.log(factorial(1));
+// console.log(factorial(5));
+
+function isPowerOfTwo(n) {}
+
+console.log(isPowerOfTwo(1));
+console.log(isPowerOfTwo(2));
+console.log(isPowerOfTwo(5));
