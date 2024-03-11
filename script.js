@@ -531,6 +531,12 @@ function isPowerOfTwo(n) {
   return true;
 }
 
-console.log(isPowerOfTwo(1));
-console.log(isPowerOfTwo(2));
-console.log(isPowerOfTwo(5));
+// console.log(isPowerOfTwo(1));
+// console.log(isPowerOfTwo(2));
+// console.log(isPowerOfTwo(5));
+
+function climbingStaircase(n) {}
+
+console.log(climbingStaircase(1));
+
+console.log(climbingStaircase(2));
