@@ -561,4 +561,8 @@ function objDiff(obj1, obj2) {
     if (!isObject(o1) && !isObject(o2)) {
     }
   }
+
+  function isObject(obj) {
+    return typeof obj === "object" && obj !== null;
+  }
 }
