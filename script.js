@@ -538,7 +538,7 @@ function isPowerOfTwo(n) {
 function climbingStaircase(n) {
   const nOfWays = [1, 2];
 
-  return nOfWays[n];
+  return nOfWays[n - 1];
 }
 
 console.log(climbingStaircase(1));
