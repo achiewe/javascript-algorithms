@@ -565,6 +565,10 @@ function objDiff(obj1, obj2) {
     if (!isObject(o1) || !isObject(o2)) {
       return [o1, o2];
     }
+
+    if (Array.isArray(o1) !== Array.isArray(o2)) {
+      return [o1, o2];
+    }
   }
 
   function isObject(obj) {
