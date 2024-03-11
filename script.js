@@ -556,4 +556,9 @@ var chunk = function (arr, size) {
   }
 };
 
-function objDiff(obj1, obj2) {}
+function objDiff(obj1, obj2) {
+  function helper(o1, o2) {
+    if (!isObject(o1) && !isObject(o2)) {
+    }
+  }
+}
