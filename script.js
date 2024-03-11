@@ -543,8 +543,8 @@ function climbingStaircase(n) {
   return nOfWays[n - 1];
 }
 
-console.log(climbingStaircase(1));
-console.log(climbingStaircase(2));
-console.log(climbingStaircase(3));
-console.log(climbingStaircase(4));
-console.log(climbingStaircase(5));
+// console.log(climbingStaircase(1));
+// console.log(climbingStaircase(2));
+// console.log(climbingStaircase(3));
+// console.log(climbingStaircase(4));
+// console.log(climbingStaircase(5));
