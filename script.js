@@ -571,9 +571,18 @@ function objDiff(o1, o2) {
 
   const diff = {};
 
-  return diff;
-
-  function isObject(obj) {
-    return typeof obj === "object" && obj !== null;
+  for (const key in o1) {
+    if ((o1, hasOwnProperty(key))) {
+      const res = objDiff(o1[key], o2[key]);
+      if (Object.keys(res).length > 0) {
+        diff[key] = res;
+      }
+    }
   }
+
+  return diff;
+}
+
+function isObject(obj) {
+  return typeof obj === "object" && obj !== null;
 }
