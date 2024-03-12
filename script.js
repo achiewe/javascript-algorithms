@@ -605,3 +605,8 @@ const testStrings = [
   "2A3 3a2",
   "2_A3*3#A2",
 ];
+
+// isterate through test strings and log the result
+testStrings.forEach(testString => {
+  console.log(`${testString}: ${isPalindrome(testString)}`);
+});
