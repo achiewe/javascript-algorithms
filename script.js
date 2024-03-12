@@ -590,7 +590,10 @@ function isObject(obj) {
 // Palindrome Checker
 
 function palindrome(str) {
-  return true;
+  str = str.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+
+  // Check if the string is equal to its reverse
+  return str === str.split("").reverse().join("");
 }
 
 palindrome("eye");
