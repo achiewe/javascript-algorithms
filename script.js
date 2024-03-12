@@ -626,6 +626,25 @@ function checkCashRegister(price, cash, cid) {
   let changeDue = cash - price;
 
   let totalCashInDrawer = cid.reduce((acc, curr) => acc + curr[1], 0);
+
+  const currencyUnits = {
+    PENNY: 0.01,
+    NICKEL: 0.05,
+    DIME: 0.1,
+    QUARTER: 0.25,
+    ONE: 1,
+    FIVE: 5,
+    TEN: 10,
+    TWENTY: 20,
+    "ONE HUNDRED": 100,
+  };
+
+  const roundToTwoDecimalPlaces = (num) => Math.round(num * 100) / 100;
+
+  const getCashFromDrawer = (currency) => {
+    let currencyIndex = cid.findIndex((item) => item[0] === currency);
+    return currencyIndex !== -1 ? cid[currencyIndex][1] : 0;
+  };
 }
 
 checkCashRegister(19.5, 20, [
