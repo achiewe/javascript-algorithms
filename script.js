@@ -678,7 +678,7 @@ function checkCashRegister(price, cash, cid) {
   }
 }
 
-checkCashRegister(19.5, 20, [
+const result = checkCashRegister(19.5, 20, [
   ["PENNY", 1.01],
   ["NICKEL", 2.05],
   ["DIME", 3.1],
@@ -689,3 +689,4 @@ checkCashRegister(19.5, 20, [
   ["TWENTY", 60],
   ["ONE HUNDRED", 100],
 ]);
+console.log(result);
