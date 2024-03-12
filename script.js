@@ -596,4 +596,12 @@ function palindrome(str) {
   return str === str.split("").reverse().join("");
 }
 
-palindrome("eye");
+// test cases
+const testStrings = [
+  "racecar",
+  "RaceCar",
+  "race CAR",
+  "2A3*3a2",
+  "2A3 3a2",
+  "2_A3*3#A2",
+];
