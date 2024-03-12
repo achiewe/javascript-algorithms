@@ -645,6 +645,37 @@ function checkCashRegister(price, cash, cid) {
     let currencyIndex = cid.findIndex((item) => item[0] === currency);
     return currencyIndex !== -1 ? cid[currencyIndex][1] : 0;
   };
+
+  let change = [];
+
+  for (let i = cid.length - 1; i >= 0; i--) {
+    let currencyName = cid[i][0];
+    let currencyValue = currencyUnits[currencyName];
+    let currencyAvailable = cid[i][1];
+    let currencyCount = Math.floor(currencyAvailable / currencyValue);
+
+    let currencyUsed =
+      Math.min(currencyCount, Math.floor(changeDue / currencyValue)) *
+      currencyValue;
+    currencyUsed = roundToTwoDecimalPlaces(currencyUsed);
+
+    changeDue = roundToTwoDecimalPlaces(changeDue - currencyUsed);
+    totalCashInDrawer = roundToTwoDecimalPlaces(
+      totalCashInDrawer - currencyUsed
+    );
+
+    if (currencyUsed > 0) {
+      change.push([currencyName, currencyUsed]);
+    }
+  }
+
+  if (changeDue > 0) {
+    return { status: "INSUFFICIENT_FUNDS", change: [] };
+  } else if (totalCashInDrawer === 0) {
+    return { status: "CLOSED", change: cid };
+  } else {
+    return { status: "OPEN", change: change };
+  }
 }
 
 checkCashRegister(19.5, 20, [
