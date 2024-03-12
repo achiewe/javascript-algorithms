@@ -607,6 +607,13 @@ const testStrings = [
 ];
 
 // isterate through test strings and log the result
-testStrings.forEach(testString => {
+testStrings.forEach((testString) => {
   console.log(`${testString}: ${isPalindrome(testString)}`);
 });
+
+// Telephone Number Validator
+function telephoneCheck(str) {
+  return true;
+}
+
+telephoneCheck("555-555-5555");
