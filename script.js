@@ -623,8 +623,9 @@ telephoneCheck("555-555-5555");
 // Cash Register
 
 function checkCashRegister(price, cash, cid) {
-  let change;
-  return change;
+  let changeDue = cash - price;
+
+  let totalCashInDrawer = cid.reduce((acc, curr) => acc + curr[1], 0);
 }
 
 checkCashRegister(19.5, 20, [
