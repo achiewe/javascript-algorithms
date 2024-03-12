@@ -586,3 +586,11 @@ function objDiff(o1, o2) {
 function isObject(obj) {
   return typeof obj === "object" && obj !== null;
 }
+
+// Palindrome Checker
+
+function palindrome(str) {
+  return true;
+}
+
+palindrome("eye");
