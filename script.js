@@ -693,6 +693,7 @@ console.log(result);
 
 // Sorted Union
 function uniteUnique(arr) {
+  let uniqueArray = [];
   return arr;
 }
 
