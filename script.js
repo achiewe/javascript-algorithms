@@ -709,6 +709,7 @@ console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
 // Spinal Tap Case
 function spinalCase(str) {
   str = str.replace(/_/g, "-").replace(/\s+/g, "-");
+  str = str.replace(/([a-z])([A-Z])/g, "$1-$2");
 
   return str;
 }
