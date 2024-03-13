@@ -719,7 +719,9 @@ function spinalCase(str) {
 console.log(spinalCase("This Is Spinal Tap"));
 
 // Wherefore art thou
-function whatIsInAName(collection, source) {}
+function whatIsInAName(collection, source) {
+  return collection.filter((obj) => {});
+}
 
 whatIsInAName(
   [
