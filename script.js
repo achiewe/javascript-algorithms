@@ -720,7 +720,11 @@ console.log(spinalCase("This Is Spinal Tap"));
 
 // Wherefore art thou
 function whatIsInAName(collection, source) {
-  return collection.filter((obj) => {});
+  return collection.filter((obj) => {
+    return Object.keys(source).every((key) => {
+      return obj.hasOwnProperty(key) && obj[key] === source[key];
+    });
+  });
 }
 
 whatIsInAName(
