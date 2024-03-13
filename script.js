@@ -716,4 +716,4 @@ function spinalCase(str) {
   return str;
 }
 
-spinalCase("This Is Spinal Tap");
+console.log(spinalCase("This Is Spinal Tap"));
