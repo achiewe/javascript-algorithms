@@ -694,6 +694,14 @@ console.log(result);
 // Sorted Union
 function uniteUnique(arr) {
   let uniqueArray = [];
+
+  for (let i = 0; i < arguments.length; i++) {
+    for (let j = 0; j < arguments[i].length; j++) {
+      if (!uniqueArray.includes(arguments[i][j])) {
+        uniqueArray.push(arguments[i][j]);
+      }
+    }
+  }
   return arr;
 }
 
