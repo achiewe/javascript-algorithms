@@ -705,3 +705,10 @@ function uniteUnique() {
   return uniqueArray;
 }
 console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
+
+// Spinal Tap Case
+function spinalCase(str) {
+  return str;
+}
+
+spinalCase("This Is Spinal Tap");
