@@ -717,3 +717,15 @@ function spinalCase(str) {
 }
 
 console.log(spinalCase("This Is Spinal Tap"));
+
+// Wherefore art thou
+function whatIsInAName(collection, source) {}
+
+whatIsInAName(
+  [
+    { first: "Romeo", last: "Montague" },
+    { first: "Mercutio", last: null },
+    { first: "Tybalt", last: "Capulet" },
+  ],
+  { last: "Capulet" }
+);
