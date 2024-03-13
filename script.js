@@ -690,3 +690,10 @@ const result = checkCashRegister(19.5, 20, [
   ["ONE HUNDRED", 100],
 ]);
 console.log(result);
+
+// Sorted Union
+function uniteUnique(arr) {
+  return arr;
+}
+
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
