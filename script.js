@@ -736,4 +736,14 @@ whatIsInAName(
   { last: "Capulet" }
 );
 
-// Return
+// return
+function add(a, b) {
+  return a + b;
+}
+
+function subt(a, b) {
+  return a - b;
+}
+
+const num1 = 10;
+const num2 = 5;
