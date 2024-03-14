@@ -787,3 +787,8 @@ console.log("Float Division:", divide(num1, num2));
 console.log("Integer Division:", integerDivide(num1, num2));
 console.log("Modulus:", mod(num1, num2));
 console.log("Exponentiation:", exponent(num1, num2));
+
+//function to reverse middle elements of an array
+function reverseMiddle(array) {
+  return [];
+}
