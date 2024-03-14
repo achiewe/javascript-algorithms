@@ -933,3 +933,5 @@ function startSmoking(bars, boxes) {
 
   return smokedCigarettes;
 }
+
+console.log(startSmoking(2, 3));
