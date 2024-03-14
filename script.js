@@ -825,7 +825,14 @@ function naughtyOrNice(data) {
       }
     }
   }
-  return "!";
+
+  if (naughtyCount > niceCount) {
+    return "Naughty!";
+  } else if (niceCount > naughtyCount) {
+    return "Nice!";
+  } else {
+    return "Nice!";
+  }
 }
 
 const yearData = {
