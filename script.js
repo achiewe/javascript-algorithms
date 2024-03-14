@@ -910,4 +910,8 @@ function removeSmallest(numbers) {
   }
 
   const min = Math.min(...numbers);
+  const index = numbers.indexOf(min);
+  const result = numbers.slice(0, index).concat(numbers.slice(index + 1));
+
+  return result;
 }
