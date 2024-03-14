@@ -790,5 +790,8 @@ console.log("Exponentiation:", exponent(num1, num2));
 
 //function to reverse middle elements of an array
 function reverseMiddle(array) {
+  if (array.length < 4) {
+    return "Array should have at least four elements!";
+  }
   return [];
 }
