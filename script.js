@@ -901,4 +901,9 @@ const yearData = {
   },
 };
 
-console.log(naughtyOrNice(yearData));
+// console.log(naughtyOrNice(yearData));
+
+//  function to remove the smallest value from an array
+function removeSmallest(numbers) {
+  return [];
+}
