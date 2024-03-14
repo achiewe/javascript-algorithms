@@ -810,3 +810,8 @@ function reverseMiddle(array) {
 
 const inputArray = [1, 2, 3, 4, 5];
 console.log(reverseMiddle(inputArray));
+
+// function to determine if the year was naughty or nice
+function naughtyOrNice(data) {
+  return "!";
+}
