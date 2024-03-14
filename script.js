@@ -807,3 +807,6 @@ function reverseMiddle(array) {
   }
   return reverseMiddleElements;
 }
+
+const inputArray = [1, 2, 3, 4, 5];
+console.log(reverseMiddle(inputArray));
