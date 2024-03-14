@@ -796,5 +796,14 @@ function reverseMiddle(array) {
 
   const middleIndex = Math.floor(array.length / 2);
   let reverseMiddleElements = [];
-  return [];
+
+  if (array.length % 2 === 0) {
+    reverseMiddleElements.push(array[middleIndex]);
+    reverseMiddleElements.push(array[middleIndex - 1]);
+  } else {
+    reverseMiddleElements.push(array[middleIndex + 1]);
+    reverseMiddleElements.push(array[middleIndex]);
+    reverseMiddleElements.push(array[middleIndex - 1]);
+  }
+  return reverseMiddleElements;
 }
