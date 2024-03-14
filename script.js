@@ -922,5 +922,5 @@ function removeSmallest(numbers) {
 
 // function to calculate how many cigarettes Timothy can smoke
 function startSmoking(bars, boxes) {
-  return 0;
+  const totalCigarettes = bars * 10 * 18 + boxes * 18;
 }
