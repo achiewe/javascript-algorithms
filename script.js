@@ -689,7 +689,7 @@ const result = checkCashRegister(19.5, 20, [
   ["TWENTY", 60],
   ["ONE HUNDRED", 100],
 ]);
-console.log(result);
+// console.log(result);
 
 // Sorted Union
 function uniteUnique() {
@@ -704,7 +704,7 @@ function uniteUnique() {
   }
   return uniqueArray;
 }
-console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
+// console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
 
 // Spinal Tap Case
 function spinalCase(str) {
@@ -716,7 +716,7 @@ function spinalCase(str) {
   return str;
 }
 
-console.log(spinalCase("This Is Spinal Tap"));
+// console.log(spinalCase("This Is Spinal Tap"));
 
 // Wherefore art thou
 function whatIsInAName(collection, source) {
@@ -780,13 +780,13 @@ function exponent(a, b) {
 const num1 = 10;
 const num2 = 5;
 
-console.log("Addition:", add(num1, num2));
-console.log("Subtraction:", subt(num1, num2));
-console.log("Multiplication:", multiply(num1, num2));
-console.log("Float Division:", divide(num1, num2));
-console.log("Integer Division:", integerDivide(num1, num2));
-console.log("Modulus:", mod(num1, num2));
-console.log("Exponentiation:", exponent(num1, num2));
+// console.log("Addition:", add(num1, num2));
+// console.log("Subtraction:", subt(num1, num2));
+// console.log("Multiplication:", multiply(num1, num2));
+// console.log("Float Division:", divide(num1, num2));
+// console.log("Integer Division:", integerDivide(num1, num2));
+// console.log("Modulus:", mod(num1, num2));
+// console.log("Exponentiation:", exponent(num1, num2));
 
 //function to reverse middle elements of an array
 function reverseMiddle(array) {
@@ -809,7 +809,7 @@ function reverseMiddle(array) {
 }
 
 const inputArray = [1, 2, 3, 4, 5];
-console.log(reverseMiddle(inputArray));
+// console.log(reverseMiddle(inputArray));
 
 // function to determine if the year was naughty or nice
 function naughtyOrNice(data) {
@@ -900,3 +900,5 @@ const yearData = {
     28: "Nice",
   },
 };
+
+console.log(naughtyOrNice(yearData));
