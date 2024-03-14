@@ -779,3 +779,11 @@ function exponent(a, b) {
 
 const num1 = 10;
 const num2 = 5;
+
+console.log("Addition:", add(num1, num2));
+console.log("Subtraction:", subt(num1, num2));
+console.log("Multiplication:", multiply(num1, num2));
+console.log("Float Division:", divide(num1, num2));
+console.log("Integer Division:", integerDivide(num1, num2));
+console.log("Modulus:", mod(num1, num2));
+console.log("Exponentiation:", exponent(num1, num2));
