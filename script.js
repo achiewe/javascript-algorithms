@@ -793,5 +793,8 @@ function reverseMiddle(array) {
   if (array.length < 4) {
     return "Array should have at least four elements!";
   }
+
+  const middleIndex = Math.floor(array.length / 2);
+  let reverseMiddleElements = [];
   return [];
 }
