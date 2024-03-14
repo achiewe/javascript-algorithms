@@ -813,5 +813,17 @@ console.log(reverseMiddle(inputArray));
 
 // function to determine if the year was naughty or nice
 function naughtyOrNice(data) {
+  let naughtyCount = 0;
+  let niceCount = 0;
+
+  for (const month in data) {
+    for (const day in data[month]) {
+      if (data[month][day] === "Naughty") {
+        naughtyCount++;
+      } else if (data[month][day] === "Nice") {
+        niceCount++;
+      }
+    }
+  }
   return "!";
 }
