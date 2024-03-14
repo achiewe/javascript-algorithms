@@ -745,5 +745,34 @@ function subt(a, b) {
   return a - b;
 }
 
+function multiply(a, b) {
+  return a * b;
+}
+
+function divide(a, b) {
+  if (b !== 0) {
+    return a / b;
+  } else {
+    return "Cannot divide by zero!";
+  }
+}
+
+function integerDivide(a, b) {
+  if (b !== 0) {
+    return Math.floor(a / b);
+  } else {
+    return "Cannot divide by zero!";
+  }
+}
+
+// Function for modulus
+function mod(a, b) {
+  if (b !== 0) {
+    return a % b;
+  } else {
+    return "Cannot divide by zero!";
+  }
+}
+
 const num1 = 10;
 const num2 = 5;
