@@ -905,5 +905,9 @@ const yearData = {
 
 //  function to remove the smallest value from an array
 function removeSmallest(numbers) {
-  return [];
+  if (numbers.length === 0) {
+    return [];
+  }
+
+  const min = Math.min(...numbers);
 }
