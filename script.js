@@ -765,13 +765,16 @@ function integerDivide(a, b) {
   }
 }
 
-// Function for modulus
 function mod(a, b) {
   if (b !== 0) {
     return a % b;
   } else {
     return "Cannot divide by zero!";
   }
+}
+
+function exponent(a, b) {
+  return Math.pow(a, b);
 }
 
 const num1 = 10;
