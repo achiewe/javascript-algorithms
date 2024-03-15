@@ -959,6 +959,10 @@ function solve(arr) {
 
 // Begin your day with a challenge, but an easy one.
 function oneTwoThree(n) {
-  // justDoIt!!
+  let firstPart = n.toString();
+  let secondPart = "";
+  for (let i = 0; i < n; i++) {
+    secondPart += "1";
+  }
   return [];
 }
