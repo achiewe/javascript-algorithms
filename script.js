@@ -986,4 +986,15 @@ function longestPalindrome(str) {
 
   let oddFound = false;
   let length = 0;
+
+  for (let count of Object.values(charCount)) {
+    if (count % 2 === 0) {
+      length += count;
+    } else {
+      length += count - 1;
+      if (!oddFound) {
+        oddFound = true;
+      }
+    }
+  }
 }
