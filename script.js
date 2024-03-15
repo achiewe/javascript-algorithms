@@ -977,4 +977,10 @@ function longestPalindrome(str) {
   str = str.toLowerCase();
 
   const charCount = {};
+
+  for (let char of str) {
+    if (/^[a-zA-Z0-9]$/.test(char)) {
+      charCount[char] = (charCount[char] || 0) + 1;
+    }
+  }
 }
