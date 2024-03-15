@@ -964,5 +964,5 @@ function oneTwoThree(n) {
   for (let i = 0; i < n; i++) {
     secondPart += "1";
   }
-  return [];
+  return [firstPart, secondPart];
 }
