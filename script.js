@@ -997,4 +997,10 @@ function longestPalindrome(str) {
       }
     }
   }
+
+  if (oddFound) {
+    length += 1;
+  }
+
+  return length;
 }
