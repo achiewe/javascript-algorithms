@@ -967,7 +967,10 @@ function oneTwoThree(n) {
   return [firstPart, secondPart];
 }
 
-console.log(oneTwoThree(0)); // ['0', '0']
-console.log(oneTwoThree(1)); // ['1', '1']
-console.log(oneTwoThree(3)); // ['3', '111']
-console.log(oneTwoThree(19)); // ['991', '1111111111111111111']
+// console.log(oneTwoThree(0)); // ['0', '0']
+// console.log(oneTwoThree(1)); // ['1', '1']
+// console.log(oneTwoThree(3)); // ['3', '111']
+// console.log(oneTwoThree(19)); // ['991', '1111111111111111111']
+
+// longest palindrome
+function longestPalindrome(str) {}
