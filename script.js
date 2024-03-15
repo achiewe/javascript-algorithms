@@ -935,3 +935,8 @@ function startSmoking(bars, boxes) {
 }
 
 console.log(startSmoking(2, 3));
+
+// simple missing sum
+function solve(arr) {
+  //..
+}
