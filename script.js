@@ -983,4 +983,7 @@ function longestPalindrome(str) {
       charCount[char] = (charCount[char] || 0) + 1;
     }
   }
+
+  let oddFound = false;
+  let length = 0;
 }
