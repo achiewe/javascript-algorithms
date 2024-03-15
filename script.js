@@ -953,6 +953,12 @@ function solve(arr) {
   return result;
 }
 
-console.log(solve([1, 2, 8, 7]));
-console.log(solve([4, 1, 2, 3, 12]));
-console.log(solve([2, 3, 2, 3, 4, 2, 12, 3]));
+// console.log(solve([1, 2, 8, 7]));
+// console.log(solve([4, 1, 2, 3, 12]));
+// console.log(solve([2, 3, 2, 3, 4, 2, 12, 3]));
+
+// Begin your day with a challenge, but an easy one.
+function oneTwoThree(n) {
+  // justDoIt!!
+  return [];
+}
