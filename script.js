@@ -939,4 +939,16 @@ function startSmoking(bars, boxes) {
 // simple missing sum
 function solve(arr) {
   arr.sort((a, b) => a - b);
+
+  let result = 1;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] <= result) {
+      result += arr[i];
+    } else {
+      break;
+    }
+  }
+
+  return result;
 }
