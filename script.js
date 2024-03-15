@@ -1004,3 +1004,6 @@ function longestPalindrome(str) {
 
   return length;
 }
+
+console.log(longestPalindrome("Hannah")); // 6
+console.log(longestPalindrome("aabbcc_yYx_")); // 9
