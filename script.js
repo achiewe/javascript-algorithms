@@ -973,4 +973,8 @@ function oneTwoThree(n) {
 // console.log(oneTwoThree(19)); // ['991', '1111111111111111111']
 
 // longest palindrome
-function longestPalindrome(str) {}
+function longestPalindrome(str) {
+  str = str.toLowerCase();
+
+  const charCount = {};
+}
