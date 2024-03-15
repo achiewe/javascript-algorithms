@@ -934,9 +934,9 @@ function startSmoking(bars, boxes) {
   return smokedCigarettes;
 }
 
-console.log(startSmoking(2, 3));
+// console.log(startSmoking(2, 3));
 
 // simple missing sum
 function solve(arr) {
-  //..
+  arr.sort((a, b) => a - b);
 }
