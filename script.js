@@ -1029,3 +1029,8 @@ function countTimeLoops(menu, a, b) {
 
   return BigInt(uniqueCombos.size);
 }
+
+const menu = [2, 3, 5];
+const a = 5;
+const b = 10;
+console.log(countTimeLoops(menu, a, b));
