@@ -1010,5 +1010,20 @@ function longestPalindrome(str) {
 
 //
 function countTimeLoops(menu, a, b) {
-  return 0n;
+  menu.sort((a, b) => a - b);
+  let uniqueCombos = new Set();
+
+  function generateCombos(start, total, combo) {
+    if (total >= a && total <= b) {
+      uniqueCombos.add(combo.join());
+    }
+
+    for (let i = start; i < menu.length; i++) {
+      if (i > start && menu[i] === menu[i - 1]) continue;
+
+      generateCombos(i + 1, total + menu[i], combo.concat(menu[i]));
+    }
+  }
+
+  generateCombos(0, 0, []);
 }
