@@ -1057,4 +1057,10 @@ function incrementString(strng) {
 
   let prefix = match[1] || "";
   let suffix = match[2] || "";
+
+  if (suffix === "") {
+    return prefix + "1";
+  }
+
+  let num = parseInt(suffix) + 1;
 }
