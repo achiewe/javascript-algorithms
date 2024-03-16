@@ -1048,6 +1048,8 @@ function theBee(n) {
   return dp[n];
 }
 
-console.log(the_bee(2)); // Output: 11
-console.log(the_bee(3)); // Output: 291
-console.log(the_bee(5)); // Output: 259123
+// console.log(the_bee(2)); // Output: 11
+// console.log(the_bee(3)); // Output: 291
+// console.log(the_bee(5)); // Output: 259123
+
+function incrementString(strng) {}
