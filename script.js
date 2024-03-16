@@ -1052,4 +1052,9 @@ function theBee(n) {
 // console.log(the_bee(3)); // Output: 291
 // console.log(the_bee(5)); // Output: 259123
 
-function incrementString(strng) {}
+function incrementString(strng) {
+  let match = strng.match(/(.*?)(\d*)$/);
+
+  let prefix = match[1] || "";
+  let suffix = match[2] || "";
+}
