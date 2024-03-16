@@ -1037,13 +1037,17 @@ function countTimeLoops(menu, a, b) {
 
 // function the_bee
 function theBee(n) {
-  let dp = new Array(N + 1).fill(0);
+  let dp = new Array(n + 1).fill(0);
   dp[0] = 1;
   dp[1] = 1;
 
-  for (let i = 2; i <= N; i++) {
+  for (let i = 2; i <= n; i++) {
     dp[i] = dp[i - 1] + dp[i - 2] + (i > 2 ? dp[i - 3] : 0);
   }
 
-  return dp[N];
+  return dp[n];
 }
+
+console.log(the_bee(2)); // Output: 11
+console.log(the_bee(3)); // Output: 291
+console.log(the_bee(5)); // Output: 259123
