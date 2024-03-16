@@ -1063,4 +1063,8 @@ function incrementString(strng) {
   }
 
   let num = parseInt(suffix) + 1;
+
+  let newSuffix = num.toString().padStart(suffix.length, "0");
+
+  return prefix + newSuffix;
 }
