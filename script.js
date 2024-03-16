@@ -1037,5 +1037,6 @@ function countTimeLoops(menu, a, b) {
 
 // function the_bee
 function theBee(n) {
+  let dp = new Array(N + 1).fill(0);
   return 0n;
 }
