@@ -1026,4 +1026,6 @@ function countTimeLoops(menu, a, b) {
   }
 
   generateCombos(0, 0, []);
+
+  return BigInt(uniqueCombos.size);
 }
