@@ -1005,5 +1005,10 @@ function longestPalindrome(str) {
   return length;
 }
 
-console.log(longestPalindrome("Hannah")); // 6
-console.log(longestPalindrome("aabbcc_yYx_")); // 9
+// console.log(longestPalindrome("Hannah")); // 6
+// console.log(longestPalindrome("aabbcc_yYx_")); // 9
+
+//
+function countTimeLoops(menu, a, b) {
+  return 0n;
+}
