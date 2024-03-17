@@ -1114,5 +1114,8 @@ function sameFactRev(nMax) {
   return result;
 }
 
-console.log(sameFactRev(1100)); // Output: [1089]
-console.log(sameFactRev(2500)); // Output: [1089, 2178]
+// console.log(sameFactRev(1100)); // Output: [1089]
+// console.log(sameFactRev(2500)); // Output: [1089, 2178]
+
+// ROT13
+function rot13(str) {}
