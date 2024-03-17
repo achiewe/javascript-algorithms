@@ -1069,8 +1069,11 @@ function incrementString(strng) {
   return prefix + newSuffix;
 }
 
-console.log(incrementString("foo")); // Output: foo1
-console.log(incrementString("foobar23")); // Output: foobar24
-console.log(incrementString("foo0042")); // Output: foo0043
-console.log(incrementString("foo9")); // Output: foo10
-console.log(incrementString("foo099")); // Output: foo100
+// console.log(incrementString("foo")); // Output: foo1
+// console.log(incrementString("foobar23")); // Output: foobar24
+// console.log(incrementString("foo0042")); // Output: foo0043
+// console.log(incrementString("foo9")); // Output: foo10
+// console.log(incrementString("foo099")); // Output: foo100
+
+//
+function sameFactRev(nMax) {}
