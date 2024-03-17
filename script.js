@@ -1118,4 +1118,12 @@ function sameFactRev(nMax) {
 // console.log(sameFactRev(2500)); // Output: [1089, 2178]
 
 // ROT13
-function rot13(str) {}
+function rot13(str) {
+  return str.replace(/[A-Za-z]/g, function (char) {
+    var charCode = char.charCodeAt(0);
+    var baseCharCode = char <= "Z" ? 65 : 97;
+    return String.fromCharCode(
+      ((charCode - baseCharCode + 13) % 26) + baseCharCode
+    );
+  });
+}
