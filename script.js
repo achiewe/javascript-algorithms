@@ -1163,4 +1163,11 @@ function luckCheck(ticket) {
   const halfLength = Math.floor(length / 2);
   let leftSum = 0;
   let rightSum = 0;
+
+  for (let i = 0; i < halfLength; i++) {
+    leftSum += parseInt(ticket[i]);
+    rightSum += parseInt(ticket[length - 1 - i]);
+  }
+
+  return leftSum === rightSum;
 }
