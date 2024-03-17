@@ -1128,5 +1128,9 @@ function rot13(str) {
   });
 }
 
-console.log(rot13("EBG13 rknzcyr.")); // ROT13 example.
-console.log(rot13("Guvf vf zl svefg EBG13 rkprepvfr!")); // This is my first ROT13 exercise!
+// console.log(rot13("EBG13 rknzcyr.")); // ROT13 example.
+// console.log(rot13("Guvf vf zl svefg EBG13 rkprepvfr!")); // This is my first ROT13 exercise!
+
+function solequa(n) {
+  return 1;
+}
