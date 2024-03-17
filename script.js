@@ -1075,5 +1075,10 @@ function incrementString(strng) {
 // console.log(incrementString("foo9")); // Output: foo10
 // console.log(incrementString("foo099")); // Output: foo100
 
-//
+//Numbers and its Reversal Having Same Prime Factors.
+function isPalindrome(num) {
+  const numStr = num.toString();
+  return numStr === numStr.split("").reverse().join("");
+}
+
 function sameFactRev(nMax) {}
