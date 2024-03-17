@@ -1152,4 +1152,15 @@ function solequa(n) {
 }
 
 // luck check
-function luckCheck(ticket) {}
+function luckCheck(ticket) {
+  if (!ticket || isNaN(ticket)) {
+    throw new Error(
+      "input must be a non-empty string representing a decimal number"
+    );
+  }
+
+  const length = ticket.length;
+  const halfLength = Math.floor(length / 2);
+  let leftSum = 0;
+  let rightSum = 0;
+}
