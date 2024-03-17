@@ -1095,5 +1095,21 @@ function primeFactors(n) {
   }
   return factors;
 }
+function sameFactRev(nMax) {
+  const result = [];
 
-function sameFactRev(nMax) {}
+  for (let i = 10; i < nMax; i++) {
+    if (!isPalindrome(i)) {
+      const rev = parseInt(i.toString().split("").reverse().join(""));
+      if (!isPalindrome(rev)) {
+        const factors1 = primeFactors(i).sort().join("");
+        const factors2 = primeFactors(rev).sort().join("");
+        if (factors1 === factors2 && !result.includes(i)) {
+          result.push(i);
+        }
+      }
+    }
+  }
+
+  return result;
+}
