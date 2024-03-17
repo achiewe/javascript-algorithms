@@ -1150,3 +1150,6 @@ function solequa(n) {
 
   return result;
 }
+
+// luck check
+function luckCheck(ticket) {}
