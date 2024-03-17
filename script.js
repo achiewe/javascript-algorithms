@@ -1132,5 +1132,19 @@ function rot13(str) {
 // console.log(rot13("Guvf vf zl svefg EBG13 rkprepvfr!")); // This is my first ROT13 exercise!
 
 function solequa(n) {
-  return 1;
+  const result = [];
+
+  for (let i = 1; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) {
+      const j = n / i;
+      const x = (i + j) / 2;
+      const y = (j - i) / 4;
+
+      if (Number.isInteger(x) && Number.isInteger(y) && x >= 0 && y >= 0) {
+        result.push([x, y]);
+      }
+    }
+  }
+
+  return result;
 }
