@@ -1146,5 +1146,7 @@ function solequa(n) {
     }
   }
 
+  result.sort((a, b) => b[0] - a[0]);
+
   return result;
 }
