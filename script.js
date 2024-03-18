@@ -1189,4 +1189,12 @@ const getNumberOfWays = (steps, maxJumpLength) => {
   if (steps === 1) return BigInt(1);
 
   const dp = new Array(steps + 1).fill(BigInt(0));
+  dp[0] = BigInt(1);
+
+  for (let i = 1; i <= steps; i++) {
+    for (let j = 1; j <= maxJumpLength && j <= i; j++) {
+      dp[i] += dp[i - j];
+    }
+  }
+  return dp[steps];
 };
