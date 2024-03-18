@@ -1183,4 +1183,8 @@ function wave(str) {
   return result;
 }
 
-console.log(wave("hello"));
+// console.log(wave("hello"));
+
+const getNumberOfWays = (steps, maxJumpLength) => {
+  return 0;
+};
