@@ -1204,4 +1204,14 @@ const getNumberOfWays = (steps, maxJumpLength) => {
 
 // duplicate arguments
 
-function solution() {}
+function solution() {
+  const args = Array.from(arguments);
+  const seen = new Set();
+
+  for (let arg of args) {
+    if (seen.has(arg)) {
+      return true;
+    }
+    seen.add(arg);
+  }
+}
