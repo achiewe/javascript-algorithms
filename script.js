@@ -1240,4 +1240,8 @@ function arrange(s) {
 // console.log(arrange([1, 2, 3, 4, 5, 6])); // Output: [1,6,5,2,3,4]
 
 // clever split
-function cleverSplit(s) {}
+function cleverSplit(s) {
+  const result = [];
+  let word = "";
+  let inSet = false;
+}
