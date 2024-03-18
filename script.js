@@ -1317,6 +1317,18 @@ function isPrime(num) {
 // console.log(goldbachPartitions(100)); // Output: ['3+97', '11+89', '17+83', '29+71', '41+59', '47+53']
 // console.log(goldbachPartitions(7)); // Output: []
 
+// n-back
 function countTargets(n, sequence) {
-  return 0;
+  let targetsCount = 0;
+
+  for (let i = n + 1; i < sequence.length; i++) {
+    if (sequence[i] === sequence[i - n - 1]) {
+      targetsCount++;
+    }
+  }
+  return targetsCount;
 }
+
+const sequence = [1, 2, 3, 2, 1, 4, 5, 6, 5, 6];
+const n = 2;
+console.log(countTargets(n, sequence)); // Output: 1
