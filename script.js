@@ -1171,3 +1171,8 @@ function luckCheck(ticket) {
 
   return leftSum === rightSum;
 }
+
+// funtion wave
+function wave(str) {
+  return result;
+}
