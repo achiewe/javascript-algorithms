@@ -1221,6 +1221,7 @@ function solution() {
 // console.log(solution(1, 2, 3, 2)); // Output: true
 // console.log(solution("1", "2", "3", "2")); // Output: true
 
+// Back and forth then Reverse
 function arrange(s) {
   const t = [];
 
@@ -1235,3 +1236,5 @@ function arrange(s) {
 
   return t;
 }
+
+console.log(arrange([1, 2, 3, 4, 5, 6])); // Output: [1,6,5,2,3,4]
