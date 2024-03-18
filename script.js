@@ -1186,5 +1186,5 @@ function wave(str) {
 // console.log(wave("hello"));
 
 const getNumberOfWays = (steps, maxJumpLength) => {
-  return 0;
+  if (steps === 1) return BigInt(1);
 };
