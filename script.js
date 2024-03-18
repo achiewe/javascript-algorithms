@@ -1272,4 +1272,10 @@ function cleverSplit(s) {
         break;
     }
   }
+
+  if (word.trim() !== "") {
+    result.push(word.trim());
+  }
+
+  return result;
 }
