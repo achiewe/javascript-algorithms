@@ -1221,4 +1221,17 @@ function solution() {
 // console.log(solution(1, 2, 3, 2)); // Output: true
 // console.log(solution("1", "2", "3", "2")); // Output: true
 
-function arrange(s) {}
+function arrange(s) {
+  const t = [];
+
+  while (s.length > 0) {
+    t.push(s.shift());
+    if (s.length > 0) {
+      t.push(s.pop());
+    }
+
+    s.reverse();
+  }
+
+  return t;
+}
