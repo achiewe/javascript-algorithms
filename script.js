@@ -1280,6 +1280,8 @@ function cleverSplit(s) {
   return result;
 }
 
-console.log(cleverSplit("buy a !car [!red green !white] [cheap or !new]")); // Output: ['Buy', 'a', '!car', '[!red green !white]', '[cheap or !new]']
-console.log(cleverSplit("!learning !javascript is [a joy]")); // Output: ['!Learning', '!javascript', 'is', '[a joy]']
-console.log(cleverSplit("[cats and dogs] are !beautiful and [cute]")); // Output: ['[Cats and dogs]', 'are', '!beautiful', 'and', '[cute]']
+// console.log(cleverSplit("buy a !car [!red green !white] [cheap or !new]")); // Output: ['Buy', 'a', '!car', '[!red green !white]', '[cheap or !new]']
+// console.log(cleverSplit("!learning !javascript is [a joy]")); // Output: ['!Learning', '!javascript', 'is', '[a joy]']
+// console.log(cleverSplit("[cats and dogs] are !beautiful and [cute]")); // Output: ['[Cats and dogs]', 'are', '!beautiful', 'and', '[cute]']
+
+function goldbachPartitions(n) {}
