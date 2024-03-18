@@ -1244,4 +1244,32 @@ function cleverSplit(s) {
   const result = [];
   let word = "";
   let inSet = false;
+
+  for (let i = 0; i < s.length; i++) {
+    switch (s[i]) {
+      case "[":
+        if (word.trim() !== "") {
+          result.push(word.trim());
+          word = "";
+        }
+        word += "[";
+        inSet = true;
+        break;
+      case "]":
+        word += "]";
+        inSet = false;
+        result.push(word);
+        word = "";
+        break;
+      case " ":
+        if (!inSet && word.trim() !== "") {
+          result.push(word.trim());
+          word = "";
+        }
+        break;
+      default:
+        word += s[i];
+        break;
+    }
+  }
 }
