@@ -1366,7 +1366,7 @@ function scoreThrows(radii) {
 
 // Odder than the rest
 function oddest(a) {
-  return 1 || null;
+  let odderNumber = null;
 
   function isOdder(n, m) {
     if (n % 2 === 0) {
@@ -1377,4 +1377,14 @@ function oddest(a) {
       return isOdder((n - 1) / 2, (m - 1) / 2);
     }
   }
+
+  for (let i = 0; i < a.length; i++) {
+    for (let j = 0; j < a.length; j++) {
+      if (i !== j && isOdder(a[i], a[j])) {
+        odderNumber = a[i];
+      }
+    }
+  }
+
+  return odderNumber;
 }
