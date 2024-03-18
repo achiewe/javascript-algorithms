@@ -1388,3 +1388,7 @@ function oddest(a) {
 
   return odderNumber;
 }
+
+console.log(oddest([1, 2])); // Output: 1
+console.log(oddest([1, 3])); // Output: 3
+console.log(oddest([1, 5])); // Output: null
