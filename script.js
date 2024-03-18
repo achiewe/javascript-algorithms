@@ -1352,4 +1352,10 @@ function scoreThrows(radii) {
       allLessThanFive = false;
     }
   }
+
+  if (allLessThanFive) {
+    totalScore += 100;
+  }
+
+  return totalScore;
 }
