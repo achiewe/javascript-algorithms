@@ -1198,3 +1198,6 @@ const getNumberOfWays = (steps, maxJumpLength) => {
   }
   return dp[steps];
 };
+
+console.log(getNumberOfWays(3, 3)); // Output: 4
+console.log(getNumberOfWays(4, 3)); // Output: 7
