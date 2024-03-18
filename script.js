@@ -1331,4 +1331,7 @@ function countTargets(n, sequence) {
 
 const sequence = [1, 2, 3, 2, 1, 4, 5, 6, 5, 6];
 const n = 2;
-console.log(countTargets(n, sequence)); // Output: 1
+// console.log(countTargets(n, sequence)); // Output: 1
+
+// throwing darts
+function scoreThrows(radii) {}
