@@ -1334,4 +1334,8 @@ const n = 2;
 // console.log(countTargets(n, sequence)); // Output: 1
 
 // throwing darts
-function scoreThrows(radii) {}
+function scoreThrows(radii) {
+  if (radii.length === 0) {
+    return 0;
+  }
+}
