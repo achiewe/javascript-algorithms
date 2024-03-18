@@ -1313,6 +1313,10 @@ function isPrime(num) {
   return true;
 }
 
-console.log(goldbachPartitions(26)); // Output: ['3+23', '7+19', '13+13']
-console.log(goldbachPartitions(100)); // Output: ['3+97', '11+89', '17+83', '29+71', '41+59', '47+53']
-console.log(goldbachPartitions(7)); // Output: []
+// console.log(goldbachPartitions(26)); // Output: ['3+23', '7+19', '13+13']
+// console.log(goldbachPartitions(100)); // Output: ['3+97', '11+89', '17+83', '29+71', '41+59', '47+53']
+// console.log(goldbachPartitions(7)); // Output: []
+
+function countTargets(n, sequence) {
+  return 0;
+}
