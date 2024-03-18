@@ -1360,6 +1360,11 @@ function scoreThrows(radii) {
   return totalScore;
 }
 
-console.log(scoreThrows([1, 5, 11])); // Output: 15
-console.log(scoreThrows([15, 20, 30])); // Output: 0
-console.log(scoreThrows([1, 2, 3, 4])); // Output: 140
+// console.log(scoreThrows([1, 5, 11])); // Output: 15
+// console.log(scoreThrows([15, 20, 30])); // Output: 0
+// console.log(scoreThrows([1, 2, 3, 4])); // Output: 140
+
+// Odder than the rest
+function oddest(a) {
+  return 1 || null;
+}
