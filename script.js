@@ -1367,4 +1367,14 @@ function scoreThrows(radii) {
 // Odder than the rest
 function oddest(a) {
   return 1 || null;
+
+  function isOdder(n, m) {
+    if (n % 2 === 0) {
+      return false;
+    } else if (m % 2 === 0) {
+      return true;
+    } else {
+      return isOdder((n - 1) / 2, (m - 1) / 2);
+    }
+  }
 }
