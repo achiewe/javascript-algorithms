@@ -1338,4 +1338,18 @@ function scoreThrows(radii) {
   if (radii.length === 0) {
     return 0;
   }
+  let totalScore = 0;
+  let allLessThanFive = true;
+
+  for (let i = 0; i < radii.length; i++) {
+    const radius = radii[i];
+    if (radius < 5) {
+      totalScore += 10;
+    } else if (radius >= 5 && radius <= 10) {
+      totalScore += 5;
+      allLessThanFive = false;
+    } else {
+      allLessThanFive = false;
+    }
+  }
 }
