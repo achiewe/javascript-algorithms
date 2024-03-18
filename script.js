@@ -1285,4 +1285,17 @@ function cleverSplit(s) {
 // console.log(cleverSplit("[cats and dogs] are !beautiful and [cute]")); // Output: ['[Cats and dogs]', 'are', '!beautiful', 'and', '[cute]']
 
 // Goldbach’s Conjecture
-function goldbachPartitions(n) {}
+function goldbachPartitions(n) {
+  const result = [];
+  if (n % 2 !== 0) {
+    return result;
+  }
+
+  for (let i = 2; i <= n / 2; i++) {
+    if (isPrime(i) && isPrime(n - i)) {
+      result.push(`${i}+${n - i}`);
+    }
+  }
+
+  return result;
+}
