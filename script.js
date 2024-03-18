@@ -1217,6 +1217,8 @@ function solution() {
   return false;
 }
 
-console.log(solution(1, 2, 3)); // Output: false
-console.log(solution(1, 2, 3, 2)); // Output: true
-console.log(solution("1", "2", "3", "2")); // Output: true
+// console.log(solution(1, 2, 3)); // Output: false
+// console.log(solution(1, 2, 3, 2)); // Output: true
+// console.log(solution("1", "2", "3", "2")); // Output: true
+
+function arrange(s) {}
