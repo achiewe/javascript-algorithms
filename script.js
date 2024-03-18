@@ -1214,4 +1214,9 @@ function solution() {
     }
     seen.add(arg);
   }
+  return false;
 }
+
+console.log(solution(1, 2, 3)); // Output: false
+console.log(solution(1, 2, 3, 2)); // Output: true
+console.log(solution("1", "2", "3", "2")); // Output: true
