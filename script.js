@@ -1440,6 +1440,24 @@ function checkWinner(piecesPositionList) {
 
     return false;
   }
+
+  for (const move of piecesPositionList) {
+    const [column, color] = move.split("_");
+    const colIndex = column.charCodeAt(0) - 65; // Convert column letter to index
+    const rowIndex = getLastEmptyRow(colIndex);
+
+    if (rowIndex === -1) {
+      return "Draw"; // Column is full, it's a draw
+    }
+
+    board[rowIndex][colIndex] = color;
+
+    if (isWinner(rowIndex, colIndex)) {
+      return color;
+    }
+  }
+
+  return "Draw";
 }
 
 const piecesPositionList = [
