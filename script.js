@@ -1408,4 +1408,32 @@ function checkWinner(piecesPositionList) {
     }
     return -1;
   }
+
+  function checkSequence(row, col, dr, dc, color) {
+    for (let i = 0; i < 4; i++) {
+      const r = row + i * dr;
+      const c = col + i * dc;
+      if (
+        r < 0 ||
+        r >= ROWS ||
+        c < 0 ||
+        c >= COLUMNS ||
+        board[r][c] !== color
+      ) {
+        return false;
+      }
+    }
+    return true;
+  }
 }
+
+const piecesPositionList = [
+  "A_Red",
+  "B_Yellow",
+  "A_Red",
+  "B_Yellow",
+  "A_Red",
+  "B_Yellow",
+  "G_Red",
+  "B_Yellow",
+];
