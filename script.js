@@ -1425,6 +1425,21 @@ function checkWinner(piecesPositionList) {
     }
     return true;
   }
+
+  function isWinner(row, col) {
+    const color = board[row][col];
+
+    // Check horizontally
+    if (checkSequence(row, col, 0, 1, color)) return true;
+    // Check vertically
+    if (checkSequence(row, col, 1, 0, color)) return true;
+    // Check diagonally (right)
+    if (checkSequence(row, col, 1, 1, color)) return true;
+    // Check diagonally (left)
+    if (checkSequence(row, col, 1, -1, color)) return true;
+
+    return false;
+  }
 }
 
 const piecesPositionList = [
