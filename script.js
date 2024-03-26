@@ -1393,5 +1393,8 @@ console.log(oddest([1, 2])); // Output: 1
 console.log(oddest([1, 3])); // Output: 3
 console.log(oddest([1, 5])); // Output: null
 
+const ROWS = 6;
+const COLUMNS = 7;
 // Connect Four
-function whoIsWinner(piecesPositionList) {}
+
+function checkWinner(piecesPositionList) {}
