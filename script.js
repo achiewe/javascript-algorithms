@@ -1470,3 +1470,5 @@ const piecesPositionList = [
   "G_Red",
   "B_Yellow",
 ];
+
+console.log(checkWinner(piecesPositionList)); // Output: "Yellow"
