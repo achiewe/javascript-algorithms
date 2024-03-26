@@ -1397,4 +1397,15 @@ const ROWS = 6;
 const COLUMNS = 7;
 // Connect Four
 
-function checkWinner(piecesPositionList) {}
+function checkWinner(piecesPositionList) {
+  const board = Array.from({ length: ROWS }, () => Array(COLUMNS).fill(null));
+
+  function getLastEmptyRow(column) {
+    for (let row = ROWS - 1; row >= 0; row--) {
+      if (board[row][column] === null) {
+        return row;
+      }
+    }
+    return -1;
+  }
+}
