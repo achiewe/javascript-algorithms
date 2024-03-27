@@ -1500,3 +1500,16 @@ function nextSmaller(n) {
 
   return result;
 }
+
+console.log(nextSmaller(21)); // Output: 12
+console.log(nextSmaller(531)); // Output: 513
+console.log(nextSmaller(2071)); // Output: 2017
+console.log(nextSmaller(9)); // Output: -1
+console.log(nextSmaller(111)); // Output: -1
+console.log(nextSmaller(135)); // Output: -1
+console.log(nextSmaller(1027)); // Output: -1
+
+//reverse 2 string
+function reverseAndMirror(s1, s2) {
+  return "";
+}
