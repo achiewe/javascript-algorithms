@@ -1571,3 +1571,7 @@ function flipNumber(n) {
     return str.split("").reverse().join("");
   }
 }
+
+console.log(flipNumber("012345")); // Output: "504132"
+console.log(flipNumber("123456789")); // Output: "975318642"
+console.log(flipNumber("abcdefghij")); // Output: "hgfedcbaij"
