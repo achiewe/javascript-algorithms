@@ -1487,4 +1487,16 @@ function nextSmaller(n) {
   while (digits[j] >= digits[i - 1]) {
     j--;
   }
+
+  [digits[i - 1], digits[j]] = [digits[j], digits[i - 1]];
+
+  const reversedTail = digits.splice(i).reverse();
+
+  const result = parseInt(digits.concat(reversedTail).join(""));
+
+  if (result.toString().length !== String(n).length || result === n) {
+    return -1;
+  }
+
+  return result;
 }
