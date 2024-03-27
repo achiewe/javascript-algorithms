@@ -1558,3 +1558,9 @@ console.log(orArrays([1, 2, 3], [4, 5, 6])); // Output: [5,7,7]
 console.log(orArrays([1, 2, 3], [1, 2])); // Output: [1,2,3]
 console.log(orArrays([1, 2], [1, 2, 3])); // Output: [1,2,3]
 console.log(orArrays([1, 2, 3], [1, 2, 3], 3)); // Output: [1,2,3]
+
+// reversing fun
+function flipNumber(n) {
+  //Code goes here!
+  return "";
+}
