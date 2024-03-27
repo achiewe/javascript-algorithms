@@ -1520,4 +1520,15 @@ function reverseAndMirror(s1, s2) {
         : char.toUpperCase();
     })
     .join("");
+
+  const reversedMirroredS1 =
+    s1
+      .split("")
+      .reverse()
+      .map((char) => {
+        return char === char.toUpperCase()
+          ? char.toLowerCase()
+          : char.toUpperCase();
+      })
+      .join("") + s1.split("").reverse().join("");
 }
