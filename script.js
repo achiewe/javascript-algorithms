@@ -1539,4 +1539,8 @@ console.log(reverseAndMirror("Fish", "Water")); // Output: HSIf@@@RETAwwATER
 console.log(reverseAndMirror("Hello", "World")); // Output: DLROw@@@OLLEhOLLE
 
 // ORing arrays
-function orArrays(arr1, arr2) {}
+function orArrays(arr1, arr2, defaultValue = 0) {
+  const maxLength = Math.max(arr1.length, arr2.length);
+
+  const result = [];
+}
