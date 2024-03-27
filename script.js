@@ -1511,5 +1511,13 @@ console.log(nextSmaller(1027)); // Output: -1
 
 //reverse 2 string
 function reverseAndMirror(s1, s2) {
-  return "";
+  const reversedS2 = s2
+    .split("")
+    .reverse()
+    .map((char) => {
+      return char === char.toUpperCase()
+        ? char.toLowerCase()
+        : char.toUpperCase();
+    })
+    .join("");
 }
