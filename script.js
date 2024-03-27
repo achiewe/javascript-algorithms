@@ -1543,4 +1543,12 @@ function orArrays(arr1, arr2, defaultValue = 0) {
   const maxLength = Math.max(arr1.length, arr2.length);
 
   const result = [];
+
+  for (let i = 0; i < maxLength; i++) {
+    const element1 = arr1[i] !== undefined ? arr1[i] : defaultValue;
+    const element2 = arr2[i] !== undefined ? arr2[i] : defaultValue;
+    result.push(element1 | element2);
+  }
+
+  return result;
 }
