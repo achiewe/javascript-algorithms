@@ -1537,3 +1537,6 @@ function reverseAndMirror(s1, s2) {
 
 console.log(reverseAndMirror("Fish", "Water")); // Output: HSIf@@@RETAwwATER
 console.log(reverseAndMirror("Hello", "World")); // Output: DLROw@@@OLLEhOLLE
+
+// ORing arrays
+function orArrays(arr1, arr2) {}
