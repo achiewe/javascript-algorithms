@@ -1534,3 +1534,6 @@ function reverseAndMirror(s1, s2) {
 
   return reversedS2 + "@@@" + reversedMirroredS1;
 }
+
+console.log(reverseAndMirror("Fish", "Water")); // Output: HSIf@@@RETAwwATER
+console.log(reverseAndMirror("Hello", "World")); // Output: DLROw@@@OLLEhOLLE
