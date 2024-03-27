@@ -1473,7 +1473,18 @@ const piecesPositionList = [
 
 console.log(checkWinner(piecesPositionList)); // Output: "Yellow"
 
-// next smaller number with the same digits
 function nextSmaller(n) {
-  return 0;
+  let i = digits.length - 1;
+  while (i > 0 && digits[i] >= digits[i - 1]) {
+    i--;
+  }
+
+  if (i === 0) {
+    return -1;
+  }
+
+  let j = digits.length - 1;
+  while (digits[j] >= digits[i - 1]) {
+    j--;
+  }
 }
