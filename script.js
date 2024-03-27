@@ -1566,4 +1566,8 @@ function flipNumber(n) {
   for (let i = 0; i < length; i++) {
     result = result.slice(0, i) + reverseString(result.slice(i));
   }
+
+  function reverseString(str) {
+    return str.split("").reverse().join("");
+  }
 }
