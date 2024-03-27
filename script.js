@@ -1561,6 +1561,9 @@ console.log(orArrays([1, 2, 3], [1, 2, 3], 3)); // Output: [1,2,3]
 
 // reversing fun
 function flipNumber(n) {
-  //Code goes here!
-  return "";
+  const length = n.length;
+
+  for (let i = 0; i < length; i++) {
+    result = result.slice(0, i) + reverseString(result.slice(i));
+  }
 }
