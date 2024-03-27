@@ -1531,4 +1531,6 @@ function reverseAndMirror(s1, s2) {
           : char.toUpperCase();
       })
       .join("") + s1.split("").reverse().join("");
+
+  return reversedS2 + "@@@" + reversedMirroredS1;
 }
