@@ -1579,4 +1579,38 @@ function flipNumber(n) {
 function planeSeat(a) {
   let seat = a.slice(0, -1);
   let letter = a.slice(-1);
+
+  if (
+    seat > 60 ||
+    letter < "A" ||
+    letter > "K" ||
+    letter === "I" ||
+    letter === "J"
+  ) {
+    // If so, return 'No Seat!!'
+    return "No Seat!!";
+  } else {
+    // Determine the section of the plane based on the seat number
+    let section;
+    if (seat <= 20) {
+      section = "Front";
+    } else if (seat <= 40) {
+      section = "Middle";
+    } else {
+      section = "Back";
+    }
+
+    // Determine the side based on the letter
+    let side;
+    if (letter >= "A" && letter <= "C") {
+      side = "Left";
+    } else if (letter >= "D" && letter <= "F") {
+      side = "Middle";
+    } else {
+      side = "Right";
+    }
+
+    // Return the seat location in the specified format
+    return `${section}-${side}`;
+  }
 }
