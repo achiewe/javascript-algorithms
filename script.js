@@ -1634,3 +1634,9 @@ function minPrice(arr) {
   }
   return maxReachable + 1;
 }
+
+const coins1 = [3, 5];
+console.log(minPrice(coins1)); // Output: 8
+
+const coins2 = [7, 9];
+console.log(minPrice(coins2));
