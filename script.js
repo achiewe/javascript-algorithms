@@ -1576,4 +1576,7 @@ function flipNumber(n) {
 // console.log(flipNumber("123456789")); // Output: "975318642"
 // console.log(flipNumber("abcdefghij")); // Output: "hgfedcbaij"
 
-function planeSeat(a) {}
+function planeSeat(a) {
+  let seat = a.slice(0, -1);
+  let letter = a.slice(-1);
+}
