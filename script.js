@@ -1615,6 +1615,13 @@ function planeSeat(a) {
   }
 }
 
-console.log(planeSeat("2B")); // Should return 'Front-Left'
-console.log(planeSeat("35E")); // Should return 'Middle-Middle'
-console.log(planeSeat("60K")); // Should return 'Back-Right'
+// console.log(planeSeat("2B")); // Should return 'Front-Left'
+// console.log(planeSeat("35E")); // Should return 'Middle-Middle'
+// console.log(planeSeat("60K")); // Should return 'Back-Right'
+
+// matunga coins
+function minPrice(arr) {
+  arr.sort((a, b) => a - b);
+
+  let maxReachable = 0;
+}
