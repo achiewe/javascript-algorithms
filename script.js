@@ -1624,4 +1624,13 @@ function minPrice(arr) {
   arr.sort((a, b) => a - b);
 
   let maxReachable = 0;
+
+  for (const coin of arr) {
+    if (coin > maxReachable + 1) {
+      return maxReachable + 1;
+    }
+
+    maxReachable += coin;
+  }
+  return maxReachable + 1;
 }
