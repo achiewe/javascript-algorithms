@@ -1471,7 +1471,7 @@ const piecesPositionList = [
   "B_Yellow",
 ];
 
-console.log(checkWinner(piecesPositionList)); // Output: "Yellow"
+// console.log(checkWinner(piecesPositionList)); // Output: "Yellow"
 
 function nextSmaller(n) {
   let i = digits.length - 1;
@@ -1501,13 +1501,13 @@ function nextSmaller(n) {
   return result;
 }
 
-console.log(nextSmaller(21)); // Output: 12
-console.log(nextSmaller(531)); // Output: 513
-console.log(nextSmaller(2071)); // Output: 2017
-console.log(nextSmaller(9)); // Output: -1
-console.log(nextSmaller(111)); // Output: -1
-console.log(nextSmaller(135)); // Output: -1
-console.log(nextSmaller(1027)); // Output: -1
+// console.log(nextSmaller(21)); // Output: 12
+// console.log(nextSmaller(531)); // Output: 513
+// console.log(nextSmaller(2071)); // Output: 2017
+// console.log(nextSmaller(9)); // Output: -1
+// console.log(nextSmaller(111)); // Output: -1
+// console.log(nextSmaller(135)); // Output: -1
+// console.log(nextSmaller(1027)); // Output: -1
 
 //reverse 2 string
 function reverseAndMirror(s1, s2) {
@@ -1535,8 +1535,8 @@ function reverseAndMirror(s1, s2) {
   return reversedS2 + "@@@" + reversedMirroredS1;
 }
 
-console.log(reverseAndMirror("Fish", "Water")); // Output: HSIf@@@RETAwwATER
-console.log(reverseAndMirror("Hello", "World")); // Output: DLROw@@@OLLEhOLLE
+// console.log(reverseAndMirror("Fish", "Water")); // Output: HSIf@@@RETAwwATER
+// console.log(reverseAndMirror("Hello", "World")); // Output: DLROw@@@OLLEhOLLE
 
 // ORing arrays
 function orArrays(arr1, arr2, defaultValue = 0) {
@@ -1553,11 +1553,11 @@ function orArrays(arr1, arr2, defaultValue = 0) {
   return result;
 }
 
-console.log(orArrays([1, 2, 3], [1, 2, 3])); // Output: [1,2,3]
-console.log(orArrays([1, 2, 3], [4, 5, 6])); // Output: [5,7,7]
-console.log(orArrays([1, 2, 3], [1, 2])); // Output: [1,2,3]
-console.log(orArrays([1, 2], [1, 2, 3])); // Output: [1,2,3]
-console.log(orArrays([1, 2, 3], [1, 2, 3], 3)); // Output: [1,2,3]
+// console.log(orArrays([1, 2, 3], [1, 2, 3])); // Output: [1,2,3]
+// console.log(orArrays([1, 2, 3], [4, 5, 6])); // Output: [5,7,7]
+// console.log(orArrays([1, 2, 3], [1, 2])); // Output: [1,2,3]
+// console.log(orArrays([1, 2], [1, 2, 3])); // Output: [1,2,3]
+// console.log(orArrays([1, 2, 3], [1, 2, 3], 3)); // Output: [1,2,3]
 
 // reversing fun
 function flipNumber(n) {
@@ -1572,6 +1572,8 @@ function flipNumber(n) {
   }
 }
 
-console.log(flipNumber("012345")); // Output: "504132"
-console.log(flipNumber("123456789")); // Output: "975318642"
-console.log(flipNumber("abcdefghij")); // Output: "hgfedcbaij"
+// console.log(flipNumber("012345")); // Output: "504132"
+// console.log(flipNumber("123456789")); // Output: "975318642"
+// console.log(flipNumber("abcdefghij")); // Output: "hgfedcbaij"
+
+function planeSeat(a) {}
