@@ -1663,7 +1663,7 @@ function balancedParens(n) {
   return result;
 }
 
-console.log(balancedParens(0)); // Output: [""]
-console.log(balancedParens(1)); // Output: ["()"]
-console.log(balancedParens(2)); // Output: ["()()", "(())"]
-console.log(balancedParens(3)); // Output: ["()()()", "(())()", "()(())", "(()())", "((()))"]
+// console.log(balancedParens(0)); // Output: [""]
+// console.log(balancedParens(1)); // Output: ["()"]
+// console.log(balancedParens(2)); // Output: ["()()", "(())"]
+// console.log(balancedParens(3)); // Output: ["()()()", "(())()", "()(())", "(()())", "((()))"]
