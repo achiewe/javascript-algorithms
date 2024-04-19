@@ -1671,4 +1671,9 @@ function balancedParens(n) {
 // function to check give character is letter or not
 function isItLetter(char) {
   const letterRegex = /^[a-zA-Z]$/;
+  return letterRegex.test(char);
 }
+
+console.log(isItLetter("a"));
+console.log(isItLetter("5"));
+console.log(isItLetter("@"));
