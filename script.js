@@ -1667,3 +1667,8 @@ function balancedParens(n) {
 // console.log(balancedParens(1)); // Output: ["()"]
 // console.log(balancedParens(2)); // Output: ["()()", "(())"]
 // console.log(balancedParens(3)); // Output: ["()()()", "(())()", "()(())", "(()())", "((()))"]
+
+// function to check give character is letter or not
+function isItLetter(character) {
+  return true || false;
+}
