@@ -1697,3 +1697,6 @@ function intToRoman(num) {
 }
 
 const STRANGE_STRING = "";
+console.log(
+  STRANGE_STRING.toUpperCase().toLowerCase().length > STRANGE_STRING.length
+);
