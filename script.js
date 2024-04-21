@@ -1704,3 +1704,5 @@ console.log(
 function removeExclamationMarks(s) {
   return s.replace(/!/g, "");
 }
+
+function yearDays(year) {}
