@@ -1712,3 +1712,5 @@ function yearDays(year) {
     return year + " has 365 days";
   }
 }
+console.log(yearDays(2000));
+console.log(yearDays(1974));
