@@ -1695,3 +1695,5 @@ function intToRoman(num) {
     { value: 1, symbol: "I" },
   ];
 }
+
+const STRANGE_STRING = "";
