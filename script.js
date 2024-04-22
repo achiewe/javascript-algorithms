@@ -1836,4 +1836,9 @@ function getDrinkByProfession(param) {
 console.log(getDrinkByProfession("Politician"));
 console.log(getDrinkByProfession("pOLitiCIaN"));
 
-function startingMark(bodyHeight) {}
+function startingMark(bodyHeight) {
+  const minHeight = 1.52;
+  const maxHeight = 1.83;
+  const minStartingMark = 9.45;
+  const maxStartingMark = 10.67;
+}
