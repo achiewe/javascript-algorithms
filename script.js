@@ -1742,3 +1742,5 @@ function maps(x) {
 }
 
 console.log(maps([1, 2, 3]));
+
+function monkeyCount(n) {}
