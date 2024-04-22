@@ -1733,4 +1733,9 @@ console.log(howMuchILoveYou(1));
 console.log(howMuchILoveYou(2));
 console.log(howMuchILoveYou(7));
 
-function maps(x) {}
+function maps(x) {
+  const doubledArray = [];
+  for (let i = 0; i < x.length; i++) {
+    doubledArray.push(x[i] * 2);
+  }
+}
