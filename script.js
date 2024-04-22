@@ -1726,4 +1726,9 @@ function howMuchILoveYou(nbPetals) {
   ];
 
   const index = (nbPetals - 1) % phrases.length;
+  return phrases[index];
 }
+
+console.log(howMuchILoveYou(1));
+console.log(howMuchILoveYou(2));
+console.log(howMuchILoveYou(7));
