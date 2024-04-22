@@ -1835,3 +1835,5 @@ function getDrinkByProfession(param) {
 
 console.log(getDrinkByProfession("Politician"));
 console.log(getDrinkByProfession("pOLitiCIaN"));
+
+function startingMark(bodyHeight) {}
