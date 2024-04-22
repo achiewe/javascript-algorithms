@@ -1715,4 +1715,13 @@ function yearDays(year) {
 console.log(yearDays(2000));
 console.log(yearDays(1974));
 
-function howMuchILoveYou(nbPetals) {}
+function howMuchILoveYou(nbPetals) {
+  const phrases = [
+    "I love you",
+    "a little",
+    "a lot",
+    "passionately",
+    "madly",
+    "not at all",
+  ];
+}
