@@ -1789,3 +1789,7 @@ function getAverage(marks) {
   const roundedAverage = Math.floor(average);
   return roundedAverage;
 }
+
+const marks = [65, 75, 82, 90, 55];
+const average = getAverage(marks);
+console.log("Average:", average);
