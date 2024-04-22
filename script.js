@@ -1785,6 +1785,7 @@ console.log(cannonsReady({ 1: "aye", 2: "aye" }));
 
 function getAverage(marks) {
   const sum = marks.reduce((acc, curr) => acc + curr, 0);
-
   const average = sum / marks.length;
+  const roundedAverage = Math.floor(average);
+  return roundedAverage;
 }
