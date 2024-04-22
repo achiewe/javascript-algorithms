@@ -1797,4 +1797,7 @@ const average = getAverage(marks);
 function feast(beast, dish) {
   const firstLetter = beast[0];
   const lastLetter = beast[beast.length - 1];
+
+  const dishFirstLetter = dish[0];
+  const dishLastLetter = dish[dish.length - 1];
 }
