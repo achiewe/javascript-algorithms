@@ -1783,4 +1783,8 @@ console.log(cannonsReady({ 1: "aye", 2: "aye", 3: "aye", 4: "aye" }));
 console.log(cannonsReady({ 1: "aye", 2: "aye", 3: "nay" }));
 console.log(cannonsReady({ 1: "aye", 2: "aye" }));
 
-function getAverage(marks) {}
+function getAverage(marks) {
+  const sum = marks.reduce((acc, curr) => acc + curr, 0);
+
+  const average = sum / marks.length;
+}
