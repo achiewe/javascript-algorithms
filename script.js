@@ -1712,8 +1712,8 @@ function yearDays(year) {
     return year + " has 365 days";
   }
 }
-console.log(yearDays(2000));
-console.log(yearDays(1974));
+// console.log(yearDays(2000));
+// console.log(yearDays(1974));
 
 function howMuchILoveYou(nbPetals) {
   const phrases = [
@@ -1779,9 +1779,9 @@ const cannonsReady = (gunners) => {
   return "Fire!";
 };
 
-console.log(cannonsReady({ 1: "aye", 2: "aye", 3: "aye", 4: "aye" }));
-console.log(cannonsReady({ 1: "aye", 2: "aye", 3: "nay" }));
-console.log(cannonsReady({ 1: "aye", 2: "aye" }));
+// console.log(cannonsReady({ 1: "aye", 2: "aye", 3: "aye", 4: "aye" }));
+// console.log(cannonsReady({ 1: "aye", 2: "aye", 3: "nay" }));
+// console.log(cannonsReady({ 1: "aye", 2: "aye" }));
 
 function getAverage(marks) {
   const sum = marks.reduce((acc, curr) => acc + curr, 0);
@@ -1792,4 +1792,6 @@ function getAverage(marks) {
 
 const marks = [65, 75, 82, 90, 55];
 const average = getAverage(marks);
-console.log("Average:", average);
+// console.log("Average:", average);
+
+function feast(beast, dish) {}
