@@ -1800,4 +1800,14 @@ function feast(beast, dish) {
 
   const dishFirstLetter = dish[0];
   const dishLastLetter = dish[dish.length - 1];
+
+  if (firstLetter === dishFirstLetter && lastLetter === dishLastLetter) {
+    return true;
+  } else {
+    return false;
+  }
 }
+
+console.log(feast("great blue heron", "garlic naan"));
+console.log(feast("chickadee", "chocolate cake"));
+console.log(feast("tiger", "tuna salad"));
