@@ -1738,4 +1738,7 @@ function maps(x) {
   for (let i = 0; i < x.length; i++) {
     doubledArray.push(x[i] * 2);
   }
+  return doubledArray;
 }
+
+console.log(maps([1, 2, 3]));
