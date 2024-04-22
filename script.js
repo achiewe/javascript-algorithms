@@ -1732,3 +1732,5 @@ function howMuchILoveYou(nbPetals) {
 console.log(howMuchILoveYou(1));
 console.log(howMuchILoveYou(2));
 console.log(howMuchILoveYou(7));
+
+function maps(x) {}
