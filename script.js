@@ -1753,3 +1753,7 @@ function monkeyCount(n) {
 
 console.log(monkeyCount(10));
 console.log(monkeyCount(1));
+
+function arrayPlusArray(arr1, arr2) {
+  return arr1 + arr2;
+}
