@@ -1832,3 +1832,6 @@ function getDrinkByProfession(param) {
       return "Beer";
   }
 }
+
+console.log(getDrinkByProfession("Politician"));
+console.log(getDrinkByProfession("pOLitiCIaN"));
