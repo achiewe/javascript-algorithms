@@ -1748,4 +1748,8 @@ function monkeyCount(n) {
   for (let i = 1; i <= n; i++) {
     monkeyArray.push(i);
   }
+  return monkeyArray;
 }
+
+console.log(monkeyCount(10));
+console.log(monkeyCount(1));
