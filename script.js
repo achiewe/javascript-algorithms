@@ -1811,3 +1811,5 @@ function feast(beast, dish) {
 console.log(feast("great blue heron", "garlic naan"));
 console.log(feast("chickadee", "chocolate cake"));
 console.log(feast("tiger", "tuna salad"));
+
+function getDrinkByProfession(param) {}
