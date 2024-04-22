@@ -1844,4 +1844,12 @@ function startingMark(bodyHeight) {
 
   const rateOfChange =
     (maxStartingMark - minStartingMark) / (maxHeight - minHeight);
+
+  const constantOffset = minStartingMark - rateOfChange * minHeight;
+
+  const startingMark = rateOfChange - bodyHeight + constantOffset;
+
+  return Math.round(startingMark * 100) / 100;
 }
+
+console.log(startingMark(1.65));
