@@ -1714,3 +1714,5 @@ function yearDays(year) {
 }
 console.log(yearDays(2000));
 console.log(yearDays(1974));
+
+function howMuchILoveYou(nbPetals) {}
