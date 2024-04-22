@@ -1724,4 +1724,6 @@ function howMuchILoveYou(nbPetals) {
     "madly",
     "not at all",
   ];
+
+  const index = (nbPetals - 1) % phrases.length;
 }
