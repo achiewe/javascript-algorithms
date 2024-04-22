@@ -1776,4 +1776,9 @@ const cannonsReady = (gunners) => {
       return "Shiver me timbers!";
     }
   }
+  return "Fire!";
 };
+
+console.log(cannonsReady({ 1: "aye", 2: "aye", 3: "aye", 4: "aye" }));
+console.log(cannonsReady({ 1: "aye", 2: "aye", 3: "nay" }));
+console.log(cannonsReady({ 1: "aye", 2: "aye" }));
