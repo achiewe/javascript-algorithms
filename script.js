@@ -1743,4 +1743,9 @@ function maps(x) {
 
 console.log(maps([1, 2, 3]));
 
-function monkeyCount(n) {}
+function monkeyCount(n) {
+  const monkeyArray = [];
+  for (let i = 1; i <= n; i++) {
+    monkeyArray.push(i);
+  }
+}
