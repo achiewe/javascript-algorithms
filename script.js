@@ -1841,4 +1841,7 @@ function startingMark(bodyHeight) {
   const maxHeight = 1.83;
   const minStartingMark = 9.45;
   const maxStartingMark = 10.67;
+
+  const rateOfChange =
+    (maxStartingMark - minStartingMark) / (maxHeight - minHeight);
 }
