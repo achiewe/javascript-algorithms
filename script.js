@@ -1864,4 +1864,15 @@ console.log(n.firstName);
 console.log(n.lastName);
 console.log(n.name);
 
-function leo(oscar) {}
+function leo(oscar) {
+  switch (oscar) {
+    case 88:
+      return "Leo finally won the Oscar! Leo is happy";
+    case 86:
+      return "Not even for Wolf of Wall Street?!";
+    case oscar > 88:
+      return "Leo got one already!";
+    default:
+      return "When will you give Leo an Oscar?";
+  }
+}
