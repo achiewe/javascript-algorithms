@@ -1893,5 +1893,7 @@ function howManyDalmations(number) {
       ? dogs[3]
       : dogs[2];
 
-      return respond;
+  return respond;
 }
+
+function doubleChar(str) {}
