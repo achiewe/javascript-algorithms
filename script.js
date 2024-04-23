@@ -1852,4 +1852,10 @@ function startingMark(bodyHeight) {
   return Math.round(startingMark * 100) / 100;
 }
 
-function NameMe(first, last) {}
+function NameMe(first, last) {
+  this.firstName = first;
+  this.lastName = last;
+  this.name = this.firstName + " " + this.lastName;
+}
+
+var nas = new NameMe("John", "Doe");
