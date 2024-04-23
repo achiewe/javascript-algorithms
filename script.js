@@ -1863,3 +1863,5 @@ var nas = new NameMe("John", "Doe");
 console.log(n.firstName);
 console.log(n.lastName);
 console.log(n.name);
+
+function leo(oscar) {}
