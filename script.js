@@ -1876,3 +1876,12 @@ function leo(oscar) {
       return "When will you give Leo an Oscar?";
   }
 }
+
+function howManyDalmations(number) {
+  var dogs = [
+    "Hardly any",
+    "More than a handful!",
+    "Woah that's a lot of dogs!",
+    "101 DALMATIONS!!!",
+  ];
+}
