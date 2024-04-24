@@ -1921,4 +1921,18 @@ function sorter(textbooks) {
     }
     return 0;
   };
+
+  textbooks.sort(customSort);
+
+  return textbooks;
 }
+
+const textbooks = [
+  { subject: "Mathematics", title: "Algebra" },
+  { subject: "science", title: "Physics" },
+  { subject: "history", title: "World History" },
+  { subject: "Science", title: "Biology" },
+  { subject: "mathematics", title: "Calculus" },
+];
+
+console.log(sorter(textbooks));
