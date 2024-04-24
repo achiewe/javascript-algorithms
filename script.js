@@ -1904,6 +1904,13 @@ function doubleChar(str) {
   return result;
 }
 
-console.log(doubleChar("String"));
-console.log(doubleChar("Hello World"));
-console.log(doubleChar("1234!_ "));
+// console.log(doubleChar("String"));
+// console.log(doubleChar("Hello World"));
+// console.log(doubleChar("1234!_ "));
+
+function sorter(textbooks) {
+  const customSort = (a, b) => {
+    const subjectA = a.subject.toLowerCase();
+    const subjectB = b.subject.toLowerCase();
+  };
+}
