@@ -1941,4 +1941,9 @@ function pipeFix(numbers) {
   const fixedPipes = [];
   const min = numbers[0];
   const max = numbers[numbers.length - 1];
+  for (let i = min; i <= max; i++) {
+    fixedPipes.push(i);
+  }
+
+  return fixedPipes;
 }
