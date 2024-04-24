@@ -1935,4 +1935,6 @@ const textbooks = [
   { subject: "mathematics", title: "Calculus" },
 ];
 
-console.log(sorter(textbooks));
+// console.log(sorter(textbooks));
+
+function pipeFix(numbers) {}
