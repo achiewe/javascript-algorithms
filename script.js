@@ -1912,5 +1912,13 @@ function sorter(textbooks) {
   const customSort = (a, b) => {
     const subjectA = a.subject.toLowerCase();
     const subjectB = b.subject.toLowerCase();
+
+    if (subjectA < subjectB) {
+      return -1;
+    }
+    if (subjectA > subjectB) {
+      return 1;
+    }
+    return 0;
   };
 }
