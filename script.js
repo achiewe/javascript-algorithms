@@ -1937,4 +1937,8 @@ const textbooks = [
 
 // console.log(sorter(textbooks));
 
-function pipeFix(numbers) {}
+function pipeFix(numbers) {
+  const fixedPipes = [];
+  const min = numbers[0];
+  const max = numbers[numbers.length - 1];
+}
