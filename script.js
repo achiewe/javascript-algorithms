@@ -1947,3 +1947,18 @@ function pipeFix(numbers) {
 
   return fixedPipes;
 }
+
+const input = [1, 3, 5, 6, 7, 8];
+// console.log(pipeFix(input));
+
+function canObtainByRotation(str1, str2) {
+  if (str1.length !== str2.length) {
+    return false;
+  }
+
+  const concatenatedStr = str1 + str1;
+  return concatenatedStr.includes(str2);
+}
+
+console.log(canObtainByRotation("abc", "sos", "mevarrrrr"));
+console.log(canObtainByRotation("abc", "sos", "mevarrrrr"));
