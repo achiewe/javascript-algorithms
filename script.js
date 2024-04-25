@@ -1975,3 +1975,5 @@ function exchangeIndices(arr) {
 const Arr = [1, 2, 3, 4, 2, 3];
 const exchangedArray = exchangeIndices(Arr);
 console.log(exchangedArray);
+
+function maxPositiveDifference(arr) {}
