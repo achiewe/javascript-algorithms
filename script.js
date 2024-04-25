@@ -1962,3 +1962,16 @@ function canObtainByRotation(str1, str2) {
 
 console.log(canObtainByRotation("abc", "sos", "mevarrrrr"));
 console.log(canObtainByRotation("abc", "sos", "mevarrrrr"));
+
+function exchangeIndices(arr) {
+  for (let i = 0; i < arr.length; i += 2) {
+    const temp = arr[i];
+    arr[i] = arr[i + 1];
+    arr[i + 1] = temp;
+  }
+  return arr.join("");
+}
+
+const Arr = [1, 2, 3, 4, 2, 3];
+const exchangedArray = exchangeIndices(Arr);
+console.log(exchangedArray);
