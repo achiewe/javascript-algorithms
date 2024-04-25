@@ -1990,3 +1990,7 @@ function maxPositiveDifference(arr) {
 
   return maxDiff;
 }
+
+console.log(maxPositiveDifference([8, 2, 5, 6, 1, 4]));
+console.log(maxPositiveDifference([12, 10, 8, 5, 4]));
+console.log(maxPositiveDifference([9, 35, 5, 17, 1, 3]));
