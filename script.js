@@ -1979,4 +1979,14 @@ console.log(exchangedArray);
 function maxPositiveDifference(arr) {
   let maxDiff = 0;
   let minSoFar = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > minSoFar && arr[i] - minSoFar > maxDiff) {
+      maxDiff = arr[i] - minSoFar;
+    } else if (arr[i] < minSoFar) {
+      minSoFar = arr[i];
+    }
+  }
+
+  return maxDiff;
 }
