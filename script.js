@@ -1994,3 +1994,11 @@ function maxPositiveDifference(arr) {
 console.log(maxPositiveDifference([8, 2, 5, 6, 1, 4]));
 console.log(maxPositiveDifference([12, 10, 8, 5, 4]));
 console.log(maxPositiveDifference([9, 35, 5, 17, 1, 3]));
+
+function evenOrOdd(number) {
+  if (number % 2 === 0) {
+    return "Even";
+  } else {
+    return "Odd";
+  }
+}
