@@ -2031,5 +2031,7 @@ const sumSquareEvenRootOdd = (ns) => {
   return Math.round(sum * 100) / 100;
 };
 
-console.log(sumSquareEvenRootOdd([1, 2, 3, 4, 5]));
-console.log(sumSquareEvenRootOdd([0, 9, 16, 25]));
+// console.log(sumSquareEvenRootOdd([1, 2, 3, 4, 5]));
+// console.log(sumSquareEvenRootOdd([0, 9, 16, 25]));
+
+function countMe(data) {}
