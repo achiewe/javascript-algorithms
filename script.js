@@ -2018,4 +2018,14 @@ const intDiff = (arr, n) => {
 // console.log(intDiff([1, 1, 5, 6, 9, 16, 27], 4));
 // console.log(intDiff([1, 1, 3, 3], 2));
 
-const sumSquareEvenRootOdd = (ns) => {};
+const sumSquareEvenRootOdd = (ns) => {
+  let sum = 0;
+
+  ns.forEach((num) => {
+    if (num % 2 === 0) {
+      sum += Math.pow(num, 2);
+    } else {
+      sum += Math.sqrt(num);
+    }
+  });
+};
