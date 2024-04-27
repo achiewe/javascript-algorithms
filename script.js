@@ -2002,3 +2002,8 @@ function evenOrOdd(number) {
     return "Odd";
   }
 }
+
+
+const intDiff = (arr, n) => {
+  
+}
