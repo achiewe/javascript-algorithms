@@ -2003,7 +2003,7 @@ function evenOrOdd(number) {
   }
 }
 
-
 const intDiff = (arr, n) => {
-  
-}
+  arr.sort((a, b) => a - b);
+  let count = 0;
+};
