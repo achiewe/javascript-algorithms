@@ -2052,4 +2052,10 @@ function squareAreaToCircle(size) {
 
 // console.log(squareAreaToCircle(16));
 
-function pak(s) {}
+function pak(s) {
+  if (!s.trim()) {
+    return "";
+  }
+
+  let words = s.split(/\s+/);
+}
