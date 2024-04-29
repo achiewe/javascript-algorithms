@@ -2046,4 +2046,6 @@ console.log(inverseSlice([12, 14, 63, 72, 55, 24], 2, 4));
 function squareAreaToCircle(size) {
   let sideLength = Math.sqrt(size);
   let radius = sideLength / 2;
+  let circleArea = Math.PI * Math.pow(radius, 2);
+  return circleArea;
 }
