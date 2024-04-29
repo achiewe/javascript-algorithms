@@ -2040,3 +2040,7 @@ function inverseSlice(items, a, b) {
   result = result.concat(items.slice(b));
   return result;
 }
+
+console.log(inverseSlice([12, 14, 63, 72, 55, 24], 2, 4));
+
+function squareAreaToCircle(size) {}
