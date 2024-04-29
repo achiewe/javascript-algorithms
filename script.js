@@ -2058,4 +2058,13 @@ function pak(s) {
   }
 
   let words = s.split(/\s+/);
+  let modifiedWords = [];
+
+  for (let i = 0; i < words.length; i++) {
+    modifiedWords.push(words[i]);
+
+    if (i < words.length - 1) {
+      modifiedWords.push("pak");
+    }
+  }
 }
