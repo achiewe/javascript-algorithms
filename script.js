@@ -2041,7 +2041,7 @@ function inverseSlice(items, a, b) {
   return result;
 }
 
-console.log(inverseSlice([12, 14, 63, 72, 55, 24], 2, 4));
+// console.log(inverseSlice([12, 14, 63, 72, 55, 24], 2, 4));
 
 function squareAreaToCircle(size) {
   let sideLength = Math.sqrt(size);
@@ -2050,4 +2050,6 @@ function squareAreaToCircle(size) {
   return circleArea;
 }
 
-console.log(squareAreaToCircle(16));
+// console.log(squareAreaToCircle(16));
+
+function pak(s) {}
