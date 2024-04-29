@@ -2037,4 +2037,6 @@ const sumSquareEvenRootOdd = (ns) => {
 function inverseSlice(items, a, b) {
   let result = [];
   result = result.concat(items.slice(0, a));
+  result = result.concat(items.slice(b));
+  return result;
 }
