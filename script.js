@@ -2049,3 +2049,5 @@ function squareAreaToCircle(size) {
   let circleArea = Math.PI * Math.pow(radius, 2);
   return circleArea;
 }
+
+console.log(squareAreaToCircle(16));
