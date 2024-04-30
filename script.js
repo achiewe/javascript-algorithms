@@ -2116,4 +2116,5 @@ function mobileKeyboard(str) {
   for (let char of str) {
     keystrokes += keyboardLayout[char];
   }
+  return keystrokes;
 }
