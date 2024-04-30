@@ -2148,4 +2148,20 @@ function encode(str) {
     y: 25,
     z: 26,
   };
+
+  let encoded = "";
+
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i];
+    if (alphabet.hasOwnProperty(char)) {
+      encoded += alphabet[char];
+    } else {
+      encoded += char;
+    }
+  }
+  return encoded;
 }
+
+console.log(encode("abc"));
+console.log(encode("codewars"));
+console.log(encode("abc-#@5"));
