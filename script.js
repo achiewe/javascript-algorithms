@@ -2190,4 +2190,5 @@ function hexHash(code) {
 
 function cogRpm(cogs, n) {
   const ratio = cogs[n] / cogs[n + 1];
+  const firstCogRpm = n % 2 === 0 ? 1 : -1;
 }
