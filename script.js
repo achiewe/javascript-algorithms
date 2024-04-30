@@ -2165,3 +2165,5 @@ function encode(str) {
 console.log(encode("abc"));
 console.log(encode("codewars"));
 console.log(encode("abc-#@5"));
+
+function hexHash(code) {}
