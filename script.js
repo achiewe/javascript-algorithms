@@ -2188,4 +2188,6 @@ function hexHash(code) {
 // console.log(hexHash("Hello, World!"));
 // console.log(hexHash("Forty4Three"));
 
-function cogRpm(cogs, n) {}
+function cogRpm(cogs, n) {
+  const ratio = cogs[n] / cogs[n + 1];
+}
