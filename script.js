@@ -2110,4 +2110,10 @@ function mobileKeyboard(str) {
     y: 3,
     z: 4,
   };
+
+  let keystrokes = 0;
+
+  for (let char of str) {
+    keystrokes += keyboardLayout[char];
+  }
 }
