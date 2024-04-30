@@ -2068,3 +2068,5 @@ function pak(s) {
     }
   }
 }
+
+function mobileKeyboard(str) {}
