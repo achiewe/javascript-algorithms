@@ -2168,4 +2168,17 @@ console.log(encode("abc-#@5"));
 
 function hexHash(code) {
   let sum = 0;
+
+  for (let i = 0; i < code.length; i++) {
+    const char = code[i];
+    const ascii = code.charCodeAt(i);
+    if (ascii >= 48 && ascii <= 57) {
+      sum += parseInt(char);
+    } else {
+      const hex = ascii.toString(16);
+      for (let j = 0; j < hex.length; j++) {
+        sum += parseInt(hex[j], 16);
+      }
+    }
+  }
 }
