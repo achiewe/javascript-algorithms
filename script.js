@@ -2118,3 +2118,5 @@ function mobileKeyboard(str) {
   }
   return keystrokes;
 }
+
+function encode(str) {}
