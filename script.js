@@ -2166,4 +2166,6 @@ console.log(encode("abc"));
 console.log(encode("codewars"));
 console.log(encode("abc-#@5"));
 
-function hexHash(code) {}
+function hexHash(code) {
+  let sum = 0;
+}
