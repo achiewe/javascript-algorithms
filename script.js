@@ -2184,6 +2184,8 @@ function hexHash(code) {
   return sum;
 }
 
-console.log(hexHash("Yo"));
-console.log(hexHash("Hello, World!"));
-console.log(hexHash("Forty4Three"));
+// console.log(hexHash("Yo"));
+// console.log(hexHash("Hello, World!"));
+// console.log(hexHash("Forty4Three"));
+
+function cogRpm(cogs, n) {}
