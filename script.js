@@ -2196,4 +2196,4 @@ function cogRpm(cogs, n) {
   return [firstCogRpm, lastCogRpm];
 }
 
-function histogram(results) {}
+function tenGreenBottles(n) {}
