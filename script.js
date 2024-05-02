@@ -2198,4 +2198,7 @@ function cogRpm(cogs, n) {
 
 function ghostBusters(building) {
   const cleanedBuilding = building.replace(/\s/g, "");
+  if (cleanedBuilding === building) {
+    return "You just wanted my autograph didn't you?";
+  }
 }
