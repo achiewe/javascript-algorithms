@@ -2196,4 +2196,4 @@ function cogRpm(cogs, n) {
   return [firstCogRpm, lastCogRpm];
 }
 
-function tenGreenBottles(n) {}
+function ghostBusters(building) {}
