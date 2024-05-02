@@ -2201,4 +2201,5 @@ function ghostBusters(building) {
   if (cleanedBuilding === building) {
     return "You just wanted my autograph didn't you?";
   }
+  return cleanedBuilding;
 }
