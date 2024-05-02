@@ -2196,4 +2196,6 @@ function cogRpm(cogs, n) {
   return [firstCogRpm, lastCogRpm];
 }
 
-function ghostBusters(building) {}
+function ghostBusters(building) {
+  const cleanedBuilding = building.replace(/\s/g, "");
+}
