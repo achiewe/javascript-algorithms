@@ -2204,4 +2204,11 @@ function ghostBusters(building) {
   return cleanedBuilding;
 }
 
-function missing(s) {}
+function missing(s) {
+  for (let i = 1; i < s.length; i++) {
+    const num1 = parseInt(s.slice(0, i));
+    let remainder = s.slice(i);
+    let nextNum = num1 + 1;
+    let missingNum = -1;
+  }
+}
