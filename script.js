@@ -2210,5 +2210,19 @@ function missing(s) {
     let remainder = s.slice(i);
     let nextNum = num1 + 1;
     let missingNum = -1;
+
+    while (remainder.length > 0) {
+      const nextStr = nextNum.toString();
+      if (remainder.startsWith(nextStr)) {
+        remainder = remainder.slice(nextStr.length);
+        nextNum++;
+      } else {
+        if (missingNum === -1) {
+          missingNum = nextNum;
+        } else {
+          return -1;
+        }
+      }
+    }
   }
 }
