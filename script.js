@@ -2225,4 +2225,7 @@ function missing(s) {
       }
     }
   }
+  if (missingNum !== -1) {
+    return missingNum;
+  }
 }
