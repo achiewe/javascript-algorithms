@@ -2203,3 +2203,5 @@ function ghostBusters(building) {
   }
   return cleanedBuilding;
 }
+
+function missing(s) {}
