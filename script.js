@@ -2224,8 +2224,13 @@ function missing(s) {
         }
       }
     }
+    if (missingNum !== -1) {
+      return missingNum;
+    }
   }
-  if (missingNum !== -1) {
-    return missingNum;
-  }
+
+  return -1;
 }
+
+console.log(missing("123567"));
+console.log(missing("899091939495"));
