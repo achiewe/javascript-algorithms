@@ -2232,5 +2232,7 @@ function missing(s) {
   return -1;
 }
 
-console.log(missing("123567"));
-console.log(missing("899091939495"));
+// console.log(missing("123567"));
+// console.log(missing("899091939495"));
+
+function timeMath(time1, op, time2) {}
