@@ -2235,4 +2235,9 @@ function missing(s) {
 // console.log(missing("123567"));
 // console.log(missing("899091939495"));
 
-function timeMath(time1, op, time2) {}
+function timeMath(time1, op, time2) {
+  const [hours1, minutes1, seconds1] = time1.split(":").map(Number);
+  const [hours2, minutes2, seconds2] = time2.split(":").map(Number);
+
+  let totalSeconds;
+}
