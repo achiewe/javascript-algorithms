@@ -2254,4 +2254,16 @@ function timeMath(time1, op, time2) {
   }
 
   totalSeconds = (totalSeconds + 24 * 3600) % (24 * 3600);
+
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  const formattedResult = [
+    ("0" + hours).slice(-2),
+    ("0" + minutes).slice(-2),
+    ("0" + seconds).slice(-2),
+  ].join(":");
+
+  return formattedResult;
 }
