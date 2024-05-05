@@ -2240,4 +2240,18 @@ function timeMath(time1, op, time2) {
   const [hours2, minutes2, seconds2] = time2.split(":").map(Number);
 
   let totalSeconds;
+
+  if (op === "+") {
+    totalSeconds =
+      (hours1 + hours2) * 3600 +
+      (minutes1 + minutes2) * 60 +
+      (seconds1 + seconds2);
+  } else if (op === "-") {
+    totalSeconds =
+      (hours1 - hours2) * 3600 +
+      (minutes1 - minutes2) * 60 +
+      (seconds1 - seconds2);
+  }
+
+  totalSeconds = (totalSeconds + 24 * 3600) % (24 * 3600);
 }
