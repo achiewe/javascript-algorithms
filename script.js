@@ -2267,3 +2267,6 @@ function timeMath(time1, op, time2) {
 
   return formattedResult;
 }
+
+console.log(timeMath("01:24:31", "+", "02:16:05"));
+console.log(timeMath("01:24:31", "-", "02:31:41"));
