@@ -2270,3 +2270,5 @@ function timeMath(time1, op, time2) {
 
 console.log(timeMath("01:24:31", "+", "02:16:05"));
 console.log(timeMath("01:24:31", "-", "02:31:41"));
+
+function withdraw(n) {}
