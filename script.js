@@ -2280,4 +2280,11 @@ function withdraw(n) {
   n %= 100;
   fiftyBills = Math.floor(n / 50);
   n %= 50;
+  twentyBills = Math.floor(n / 20);
+
+  return [hundredBills, fiftyBills, twentyBills];
 }
+
+console.log(withdraw(250));
+console.log(withdraw(260));
+console.log(withdraw(370));
