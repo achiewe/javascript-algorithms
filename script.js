@@ -2275,4 +2275,9 @@ function withdraw(n) {
   let hundredBills = 0;
   let fiftyBills = 0;
   let twentyBills = 0;
+
+  hundredBills = Math.floor(n / 100);
+  n %= 100;
+  fiftyBills = Math.floor(n / 50);
+  n %= 50;
 }
