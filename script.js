@@ -21,3 +21,10 @@ function sayHello() {
 }
 
 console.log(doSomething(sayHello));
+
+// high-order function example two
+function createMultiplier(factor) {
+  return function (number) {
+    number * factor;
+  };
+}
