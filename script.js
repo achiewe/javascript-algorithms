@@ -9,3 +9,15 @@ let deeporiginal = [1, 2, 3, 4];
 let deepCopy = [...deeporiginal];
 deepCopy[0] = 8;
 console.log(deeporiginal);
+
+// high-order function example one
+function doSomething(callBack) {
+  console.log("i am doing something");
+  callBack();
+}
+
+function sayHello() {
+  console.log("hello");
+}
+
+console.log(doSomething(sayHello));
