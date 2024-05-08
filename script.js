@@ -28,3 +28,9 @@ function createMultiplier(factor) {
     number * factor;
   };
 }
+
+// splice method
+
+let fruits = ["apple", "banana", "orange"];
+fruits.splice(1, 0, "grape", "lemon"); // Now, fruits = ['apple', 'grape', 'lemon', 'orange']
+console.log(fruits);
