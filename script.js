@@ -50,4 +50,11 @@ function* dithering(width, height) {
   }
 }
 
-function generateSequence(size) {}
+function generateSequence(size) {
+  const sequence = new Array(size * size);
+  let x = 0,
+    y = 0,
+    dx = 1,
+    dy = 0,
+    i = 0;
+}
