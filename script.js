@@ -39,4 +39,13 @@ function* dithering(width, height) {
   const maxSize = Math.max(width, height);
   const size = Math.pow(2, Math.ceil(Math.log2(maxSize)));
   const sequence = generateSequence(size);
+
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      const index = sequence[(x % size) + (y % size) * size];
+      if (index < width && index < height) {
+        yield [index, size - index - 1];
+      }
+    }
+  }
 }
