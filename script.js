@@ -35,4 +35,8 @@ let fruits = ["apple", "banana", "orange"];
 fruits.splice(1, 0, "grape", "lemon"); // Now, fruits = ['apple', 'grape', 'lemon', 'orange']
 console.log(fruits);
 
-function* dithering(width, height) {}
+function* dithering(width, height) {
+  const maxSize = Math.max(width, height);
+  const size = Math.pow(2, Math.ceil(Math.log2(maxSize)));
+  const sequence = generateSequence(size);
+}
