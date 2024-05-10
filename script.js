@@ -49,3 +49,5 @@ function* dithering(width, height) {
     }
   }
 }
+
+function generateSequence(size) {}
