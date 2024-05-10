@@ -52,6 +52,7 @@ function* dithering(width, height) {
 
 function generateSequence(size) {
   const sequence = new Array(size * size);
+
   let x = 0,
     y = 0,
     dx = 1,
@@ -64,5 +65,21 @@ function generateSequence(size) {
 
     const nx = x + dx;
     const ny = y + dy;
+
+    if (
+      nx < 0 ||
+      nx >= size ||
+      ny < 0 ||
+      ny >= size ||
+      sequence[nx + ny * size] !== undefined
+    ) {
+      const temp = dx;
+      dx = -dy;
+      dy = temp;
+    }
+
+    x += dx;
+    y += dy;
   }
+  return sequence;
 }
