@@ -57,4 +57,12 @@ function generateSequence(size) {
     dx = 1,
     dy = 0,
     i = 0;
+
+  while (i < size * size) {
+    sequence[x + y * size] = i + 1;
+    i++;
+
+    const nx = x + dx;
+    const ny = y + dy;
+  }
 }
