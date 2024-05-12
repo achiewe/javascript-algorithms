@@ -171,4 +171,14 @@ function runoff(voters) {
     const firstChoice = ballot[0];
     voteCount[firstChoice] = (voteCount[firstChoice] || 0) + 1;
   }
+  const totalVotes = Object.values(voteCount).reduce(
+    (total, count) => total + count,
+    0
+  );
+
+  for (const candidate in voteCount) {
+    if (voteCount[candidate] > totalVotes / 2) {
+      return candidate;
+    }
+  }
 }
