@@ -190,4 +190,12 @@ function runoff(voters) {
   if (eliminatedCandidates.length === Object.keys(voteCount).length) {
     return undefined;
   }
+  for (let i = 0; i < voters.length; i++) {
+    for (const eliminatedCandidate of eliminatedCandidates) {
+      const index = voters[i].indexOf(eliminatedCandidate);
+      if (index !== -1) {
+        voters[i].splice(index, 1);
+      }
+    }
+  }
 }
