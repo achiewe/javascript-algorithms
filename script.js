@@ -109,3 +109,14 @@ function upsideDown(x, y) {
     }
   }
 }
+
+function getUpsideDownEquivalent(digit) {
+  const upsideDownEquivalents = {
+    0: "0",
+    1: "1",
+    6: "9",
+    8: "8",
+    9: "6",
+  };
+  return upsideDownEquivalents[digit];
+}
