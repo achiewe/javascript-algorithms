@@ -123,6 +123,11 @@ function getUpsideDownEquivalent(digit) {
 
 const x = "0";
 const y = "25";
-console.log(upsideDown(x, y));
+// console.log(upsideDown(x, y));
 
-function trenchAssault(s) {}
+function trenchAssault(s) {
+  const [groundLayer, trenchLayer] = s.split("\n");
+
+  let frontline = "";
+  let attackingPower = 0;
+}
