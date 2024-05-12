@@ -131,5 +131,11 @@ function trenchAssault(s) {
   let frontline = "";
   let attackingPower = 0;
 
-  for (let i = 0; i < groundLayer.length; i++) {}
+  for (let i = 0; i < groundLayer.length; i++) {
+    const currentChar = groundLayer[i];
+    if (/[wpbs]/.test(currentChar)) {
+      attackingPower += getPower(currentChar);
+      const nextChar = trenchLayer[i + 1];
+    }
+  }
 }
