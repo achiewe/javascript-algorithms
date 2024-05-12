@@ -94,5 +94,18 @@ function upsideDown(x, y) {
   for (let i = lowerBound; i <= upperBound; i++) {
     const numStr = i.toString();
     let upsideDownNum = "";
+
+    for (let j = numStr.length - 1; j >= 0; j--) {
+      const digit = numStr.charAt(j);
+      if (!validUpsideDowns.includes(digit)) {
+        upsideDownNum = "";
+        break;
+      }
+      upsideDownNum += getUpsideDownEquivalent(digit);
+    }
+
+    if (upsideDownNum === numStr) {
+      count++;
+    }
   }
 }
