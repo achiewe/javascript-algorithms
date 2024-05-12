@@ -136,6 +136,14 @@ function trenchAssault(s) {
     if (/[wpbs]/.test(currentChar)) {
       attackingPower += getPower(currentChar);
       const nextChar = trenchLayer[i + 1];
+      if (nextChar === "|") {
+        const defenderPower =
+          getPower(groundLayer[i + 1]) * (i % 5 === 0 ? 2 : 1);
+        if (attackingPower > defenderPower) {
+          frontline += "L";
+          attackingPower -= defenderPower;
+        }
+      }
     }
   }
 }
