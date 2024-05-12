@@ -164,4 +164,11 @@ function getPower(letter) {
   return leftSidePowers[letter] || rightSidePowers[letter] || 0;
 }
 
-function runoff(voters) {}
+function runoff(voters) {
+  const voteCount = {};
+
+  for (const ballot of voters) {
+    const firstChoice = ballot[0];
+    voteCount[firstChoice] = (voteCount[firstChoice] || 0) + 1;
+  }
+}
