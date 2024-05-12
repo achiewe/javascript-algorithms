@@ -163,3 +163,5 @@ function getPower(letter) {
 
   return leftSidePowers[letter] || rightSidePowers[letter] || 0;
 }
+
+function runoff(voters) {}
