@@ -150,6 +150,9 @@ function trenchAssault(s) {
           attackingPower = defenderPower - attackingPower;
         }
       }
+    } else if (currentChar === "|") {
+      frontline += "|";
     }
   }
+  return frontline;
 }
