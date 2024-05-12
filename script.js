@@ -198,4 +198,5 @@ function runoff(voters) {
       }
     }
   }
+  return runoff(voters);
 }
