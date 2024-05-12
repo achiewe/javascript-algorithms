@@ -90,4 +90,9 @@ function upsideDown(x, y) {
 
   const lowerBound = BigInt(x);
   const upperBound = BigInt(y);
+
+  for (let i = lowerBound; i <= upperBound; i++) {
+    const numStr = i.toString();
+    let upsideDownNum = "";
+  }
 }
