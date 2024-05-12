@@ -84,4 +84,10 @@ function generateSequence(size) {
   return sequence;
 }
 
-function upsideDown(x, y) {}
+function upsideDown(x, y) {
+  const validUpsideDowns = ["0", "1", "6", "8", "9"];
+  let count = 0;
+
+  const lowerBound = BigInt(x);
+  const upperBound = BigInt(y);
+}
