@@ -130,4 +130,6 @@ function trenchAssault(s) {
 
   let frontline = "";
   let attackingPower = 0;
+
+  for (let i = 0; i < groundLayer.length; i++) {}
 }
