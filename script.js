@@ -181,4 +181,13 @@ function runoff(voters) {
       return candidate;
     }
   }
+
+  const leastVotes = Math.min(...Object.values(voteCount));
+  const eliminatedCandidates = Object.keys(voteCount).filter(
+    (candidate) => voteCount[candidate] === leastVotes
+  );
+
+  if (eliminatedCandidates.length === Object.keys(voteCount).length) {
+    return undefined;
+  }
 }
