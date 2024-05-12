@@ -120,3 +120,7 @@ function getUpsideDownEquivalent(digit) {
   };
   return upsideDownEquivalents[digit];
 }
+
+const x = "0";
+const y = "25";
+console.log(upsideDown(x, y));
