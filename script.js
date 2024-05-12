@@ -142,6 +142,12 @@ function trenchAssault(s) {
         if (attackingPower > defenderPower) {
           frontline += "L";
           attackingPower -= defenderPower;
+        } else if (attackingPower === defenderPower) {
+          frontline += "L";
+          attackingPower = 0;
+        } else {
+          frontline += "R";
+          attackingPower = defenderPower - attackingPower;
         }
       }
     }
