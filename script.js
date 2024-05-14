@@ -211,3 +211,41 @@ const device = {
     return encodedMessage;
   },
 };
+
+console.log(device.encode("What the hell"));
+console.log(
+  device.encode(
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  )
+);
+console.log(
+  device.encode(
+    "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  )
+);
+console.log(device.encode("!@#$%^&*()_+-"));
+console.log("abcdefghijklmnopqrstuvwxyz");
+console.log(
+  "abcdefghijklmnopqrstuvwxyz"
+    .split("")
+    .map(function (a) {
+      return device.encode(a);
+    })
+    .join("")
+);
+console.log(
+  "abcdefghijklmnopqrstuvwxyz"
+    .split("")
+    .map(function (a) {
+      return device.encode("_" + a)[1];
+    })
+    .join("")
+);
+console.log(
+  "abcdefghijklmnopqrstuvwxyz"
+    .split("")
+    .map(function (a) {
+      return device.encode("__" + a)[2];
+    })
+    .join("")
+);
