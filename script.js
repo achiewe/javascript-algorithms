@@ -201,3 +201,13 @@ function runOff(voters) {
   }
   return runoff(voters);
 }
+
+const device = {
+  encode: function (message) {
+    return message;
+  },
+
+  decode: function (encodedMessage) {
+    return encodedMessage;
+  },
+};
