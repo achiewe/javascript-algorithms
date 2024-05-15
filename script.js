@@ -255,4 +255,9 @@ function allocateRooms(customers) {
   let rooms = [];
 
   let allocation = [];
+
+  for (let i = 0; i < customers.length; i++) {
+    let customer = customers[i];
+    let allocated = false;
+  }
 }
