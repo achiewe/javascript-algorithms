@@ -250,4 +250,9 @@ console.log(
     .join("")
 );
 
-function allocateRooms(customers) {}
+function allocateRooms(customers) {
+  customers.sort((a, b) => a[0] - b[0]);
+  let rooms = [];
+
+  let allocation = [];
+}
