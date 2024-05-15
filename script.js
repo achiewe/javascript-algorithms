@@ -259,5 +259,13 @@ function allocateRooms(customers) {
   for (let i = 0; i < customers.length; i++) {
     let customer = customers[i];
     let allocated = false;
+    for (let j = 0; j < rooms.length; j++) {
+      if (customer[0] > rooms[j]) {
+        allocation.push(j + 1);
+        rooms[j] = customer[1];
+        allocated = true;
+        break;
+      }
+    }
   }
 }
