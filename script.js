@@ -249,3 +249,5 @@ console.log(
     })
     .join("")
 );
+
+function allocateRooms(customers) {}
