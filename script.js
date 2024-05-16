@@ -274,3 +274,10 @@ function allocateRooms(customers) {
   }
   return allocation;
 }
+
+console.log(
+  allocateRooms([
+    [1, 5],
+    [2, 4],
+  ])
+);
