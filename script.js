@@ -267,5 +267,10 @@ function allocateRooms(customers) {
         break;
       }
     }
+    if (!allocated) {
+      allocation.push(rooms.length + 1);
+      rooms.push(customer[1]);
+    }
   }
+  return allocation;
 }
