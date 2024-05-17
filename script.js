@@ -281,3 +281,5 @@ console.log(
     [2, 4],
   ])
 );
+
+function nameInStr(str, name) {}
