@@ -298,3 +298,6 @@ function nameInStr(str, name) {
   }
   return false;
 }
+
+console.log(nameInStr("Across the rivers", "chris"));
+console.log(nameInStr("Next to a lake", "chris"));
