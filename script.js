@@ -296,4 +296,5 @@ function nameInStr(str, name) {
       return true;
     }
   }
+  return false;
 }
