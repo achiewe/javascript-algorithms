@@ -282,4 +282,9 @@ console.log(
   ])
 );
 
-function nameInStr(str, name) {}
+function nameInStr(str, name) {
+  str = str.toLowerCase();
+  name = name.toLowerCase();
+
+  let nameIndex = 0;
+}
