@@ -287,4 +287,13 @@ function nameInStr(str, name) {
   name = name.toLowerCase();
 
   let nameIndex = 0;
+
+  for (let char of str) {
+    if (char === name[nameIndex]) {
+      nameIndex++;
+    }
+    if (nameIndex === name.length) {
+      return true;
+    }
+  }
 }
