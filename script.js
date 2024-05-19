@@ -301,3 +301,14 @@ function nameInStr(str, name) {
 
 console.log(nameInStr("Across the rivers", "chris"));
 console.log(nameInStr("Next to a lake", "chris"));
+
+// call method
+function foo() {
+  console.log(`whats up ${this.name}`);
+}
+
+let obj = {
+  name: "gena",
+};
+
+console.log(foo.call(obj));
