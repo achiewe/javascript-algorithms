@@ -324,3 +324,18 @@ let objApp = {
 };
 
 console.log(applyFunc.apply(null, [objApp.surname]));
+
+// bind method
+const wizard = {
+  name: "Merlin",
+  sayName: function () {
+    console.log(`My name is ${this.name}`);
+  },
+};
+
+let anotherwiz = {
+  name: "jurxa",
+};
+
+const anothwiz = wizard.sayName.bind(anotherwiz);
+console.log(anotherwiz, "mevarr");
