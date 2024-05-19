@@ -312,3 +312,15 @@ let obj = {
 };
 
 console.log(foo.call(obj));
+
+// apply method
+
+function applyFunc(surname) {
+  return "hello" + surname + "!";
+}
+
+let objApp = {
+  surname: "genodish",
+};
+
+console.log(applyFunc.apply(null, [objApp.surname]));
