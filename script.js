@@ -339,3 +339,9 @@ let anotherwiz = {
 
 const anothwiz = wizard.sayName.bind(anotherwiz);
 console.log(anotherwiz, "mevarr");
+
+// shallow copy
+let arrchi = [1, 2, 3, 4];
+let givi = arrchi;
+givi[0] = 10;
+console.log(arrchi, "mevararchiiii");
