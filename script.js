@@ -351,3 +351,5 @@ let deepCop = [1, 2, 3, 4];
 let deepCopyCopy = [...deepCop];
 deepCopy[1] = 5;
 console.log(deepCop);
+
+console.log(this);
