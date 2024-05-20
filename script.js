@@ -345,3 +345,9 @@ let arrchi = [1, 2, 3, 4];
 let givi = arrchi;
 givi[0] = 10;
 console.log(arrchi, "mevararchiiii");
+
+// deep copy
+let deepCop = [1, 2, 3, 4];
+let deepCopyCopy = [...deepCop];
+deepCopy[1] = 5;
+console.log(deepCop);
