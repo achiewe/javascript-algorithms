@@ -20,4 +20,12 @@ const stringListDataArray = differentElements.map(
 
 console.log(stringListDataArray);
 
-function ways(n, k) {}
+function ways(n, k) {
+  const MOD = 1000000007n;
+
+  if (n === 1n) return k % MOD;
+  if (n === 2n) return (k * k) % MOD;
+
+  let same = k % MOD;
+  let diff = (k * (k - 1n)) % MOD;
+}
