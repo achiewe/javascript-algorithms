@@ -19,3 +19,5 @@ const stringListDataArray = differentElements.map(
 );
 
 console.log(stringListDataArray);
+
+function ways(n, k) {}
