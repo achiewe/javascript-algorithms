@@ -28,4 +28,11 @@ function ways(n, k) {
 
   let same = k % MOD;
   let diff = (k * (k - 1n)) % MOD;
+  for (let i = 3n; i <= n; i++) {
+    let temp = diff;
+    diff = ((diff + same) * (k - 1n)) % MOD;
+    same = temp;
+  }
+
+  return (same + diff) % MOD;
 }
