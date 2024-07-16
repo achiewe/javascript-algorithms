@@ -38,9 +38,4 @@
 // }
 
 
-function example(a, b) {
-  console.log(arguments); // shows all arguments passed to the function
-  console.log(this);
-}
 
-example(1, 2); // calling the function
