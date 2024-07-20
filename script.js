@@ -41,3 +41,11 @@
 
 const x = new Map();
 const y = new Set();
+
+const obj = {
+    'x': 8,
+    x: 8,
+    8: 'smth',
+    [Symbol]: 'smth',
+   
+ };
