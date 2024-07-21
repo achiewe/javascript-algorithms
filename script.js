@@ -49,3 +49,10 @@ const obj = {
     [Symbol]: 'smth',
    
  };
+
+ x.defineProperty('name', {
+    enumerable: true,
+    writable: false,
+    configurable: false
+   ...
+  })
