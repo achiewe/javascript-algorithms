@@ -57,13 +57,4 @@ const obj = {
    ...
   })
 
-  obj = {
-   name: "achi"
-   get Fullname() {
-    return "Proshin"
-  }
  
- set Fullname(fullname) {
-    this.Fullname = fullname
-  }
-}
