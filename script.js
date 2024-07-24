@@ -47,14 +47,10 @@ const obj = {
     x: 8,
     8: 'smth',
     [Symbol]: 'smth',
+    y:"8",
    
  };
 
- x.defineProperty('name', {
-    enumerable: true,
-    writable: false,
-    configurable: false
-   ...
-  })
+
 
  
