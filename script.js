@@ -52,5 +52,5 @@ const obj = {
  };
 
 
-
+const x = new WeakMap()
  
