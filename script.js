@@ -52,5 +52,6 @@ const obj = {
  };
 
 
-const x = new WeakMap()
+const z = new WeakMap();
+const b = new WeakSet();
  
