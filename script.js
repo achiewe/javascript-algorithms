@@ -54,4 +54,7 @@ const obj = {
 
 const z = new WeakMap();
 const b = new WeakSet();
+class obj{
+    name:"achi",
+}
  
