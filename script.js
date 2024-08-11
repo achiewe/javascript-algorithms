@@ -55,4 +55,15 @@ const obj = {
 const z = new WeakMap();
 const b = new WeakSet();
 
+{
+    name: "Misha"
+    get Fullname() {
+     return "Proshin"
+   }
+  
+  set Fullname(fullname) {
+     this.Fullname = fullname
+   }
+ }
+
  
