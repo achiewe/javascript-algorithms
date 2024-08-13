@@ -59,4 +59,7 @@ for(let i=1; i<5; i++){
   console.log(i)
 }
 
+
+const ninjas = ["Yagyu", "Kuma", "Hattori", "Fuma"]; 
+delete ninjas[1];
  
