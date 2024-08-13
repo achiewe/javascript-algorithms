@@ -62,4 +62,4 @@ for(let i=1; i<5; i++){
 
 const ninjas = ["Yagyu", "Kuma", "Hattori", "Fuma"]; 
 delete ninjas[1];
- 
+console.log(1, "mevar pirvel indexze") 
