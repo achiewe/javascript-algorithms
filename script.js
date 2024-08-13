@@ -69,3 +69,19 @@ for(let i = 0; i < injas.length; i++){
 assert(injas[i] !== null, ninjas[i]); 
 }
 
+
+const samurai = [ 
+  {name: "Yagyu", weapon: "shuriken"}, 
+  {name: "Yoshi", weapon: "katana"}, 
+  {name: "Kuma", weapon: "wakizashi"} 
+  ]; 
+  const weapons = []; 
+  samurai.forEach(samurai => { 
+  weapons.push(samurai.weapon); 
+  }); 
+  assert(weapons[0] === "shuriken" 
+  && weapons[1] === "katana" 
+  && weapons[2] === "wakizashi" 
+  && weapons.length === 3, 
+  "The new array contains all weapons");
+
