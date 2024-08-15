@@ -69,6 +69,25 @@ for(let i = 0; i < injas.length; i++){
 assert(injas[i] !== null, ninjas[i]); 
 }
 
+const soroi = [ 
+  {name: "Yagyu", weapon: "shuriken"}, 
+  {name: "Yoshi" }, 
+  {name: "Kuma", weapon: "wakizashi"} 
+  ]; 
+  const ninjaWithWakizashi = soroi.find(soroi => { 
+  return soroi.weapon === "wakizashi"; 
+  }); 
+  assert(ninjaWithWakizashi.name === "Kuma" 
+  && ninjaWithWakizashi.weapon === "wakizashi", 
+  "Kuma is wielding a wakizashi");
 
-
+const ninjaWithKatana = soroi.find(soroi => { 
+  return soroi.weapon === "katana"; 
+  }); 
+  assert(ninjaWithKatana === undefined, 
+  "We couldn't find a ninja that wields a katana"); 
+  const armedNinjas = soroi.filter(soroi => "weapon" in soroi); 
+  assert(armedNinjas.length === 2, "There are two armed ninjas:"); 
+  assert(armedNinjas[0].name === "Yagyu" 
+  && armedNinjas[1].name === "Kuma", "Yagyu and Kuma"); 
 
