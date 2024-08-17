@@ -93,7 +93,6 @@ const ninjaWithKatana = soroi.find(soroi => {
 
 
 
-  // number of array
   const numbers = [1, 2, 3, 4]; 
   const sum = numbers.reduce((aggregated, number) => 
   aggregated + number, 0); 
