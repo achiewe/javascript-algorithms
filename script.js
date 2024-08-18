@@ -98,3 +98,9 @@ const ninjaWithKatana = soroi.find(soroi => {
   aggregated + number, 0); 
   assert(sum === 10, "The sum of first four numbers is 10")
 
+
+const html = "<b class='hello'>Hello</b> <i>world!</i>"; 
+const pattern = /<(\w+)([^>]*)>(.*?)<\/\1>/g; 
+let match = pattern.exec(html); 
+assert(match[0] === "<b class='hello'>Hello</b>", 
+"The entire tag, start to finish.");
