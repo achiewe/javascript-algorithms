@@ -105,5 +105,3 @@ let match = pattern.exec(html);
 assert(match[0] === "<b class='hello'>Hello</b>", 
 "The entire tag, start to finish.");
 
-const patterns = /<(\w+)([^>]*)>(.*?)<\/\1>/g;
-const testPat = /<(\w+)([^>]*)>(.*?)<\/\1>/c;
