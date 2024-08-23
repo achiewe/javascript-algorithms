@@ -92,7 +92,7 @@ const ninjaWithKatana = soroi.find(soroi => {
   && armedNinjas[1].name === "Kuma", "Yagyu and Kuma"); 
 
 
-
+  // add the sum and number variable in the script js file 
   const numbers = [1, 2, 3, 4]; 
   const sum = numbers.reduce((aggregated, number) => 
   aggregated + number, 0); 
