@@ -99,6 +99,7 @@ const ninjaWithKatana = soroi.find(soroi => {
   assert(sum === 10, "The sum of first four numbers is 10")
 
 
+  // variable of the html, pattern, match and other
 const html = "<b class='hello'>Hello</b> <i>world!</i>"; 
 const pattern = /<(\w+)([^>]*)>(.*?)<\/\1>/g; 
 let match = pattern.exec(html); 
