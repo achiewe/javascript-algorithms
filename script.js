@@ -103,4 +103,4 @@ const ninjaWithKatana = soroi.find(soroi => {
 const html = "<b class='hello'>Hello</b> <i>world!</i>"; 
 const pattern = /<(\w+)([^>]*)>(.*?)<\/\1>/g; 
 
-
+const algorithms = "task" + 1;
