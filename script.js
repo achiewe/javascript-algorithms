@@ -98,7 +98,10 @@ const ninjaWithKatana = soroi.find(soroi => {
   aggregated + number, 0); 
   assert(sum === 10, "The sum of first four numbers is 10")
   const array = [2, 3, 4, 5];
-
-
+  const sre = {
+    file:"pdf",
+    content:"detective",
+    sign:"main",
+  }
 
 
