@@ -104,4 +104,4 @@ const ninjaWithKatana = soroi.find(soroi => {
     sign:"main",
   }
 
-
+const numbersSum = 4 + 2300;
