@@ -109,3 +109,4 @@ const numSum = 240 + 500;
 let organicNum = 500 + 600;
 let positiveNum = 400 + 250;
 let allNum = organicNum + positiveNum;
+const finalResult = allNum + numSum;
