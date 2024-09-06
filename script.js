@@ -110,3 +110,14 @@ let organicNum = 500 + 600;
 let positiveNum = 400 + 250;
 let allNum = organicNum + positiveNum;
 const finalResult = allNum + numSum;
+
+function reverseString(str) {
+  let splitString = str.split("");
+  let reverseArray = splitString.reverse();
+  let reversedString = reverseArray.join("");
+  return reversedString;
+}
+let originalString = "hello";
+let result = reverseString(originalString);
+console.log(result); 
+
