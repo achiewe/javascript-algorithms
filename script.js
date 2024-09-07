@@ -120,4 +120,4 @@ function reverseString(str) {
 let originalString = "hello";
 let result = reverseString(originalString);
 console.log(result); 
-
+console.log(originalString)
