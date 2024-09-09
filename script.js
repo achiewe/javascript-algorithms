@@ -118,4 +118,4 @@ function reverseString(str) {
   return reversedString;
 }
 let originalString = "hello";
-let result = reverseString(originalString);
+
