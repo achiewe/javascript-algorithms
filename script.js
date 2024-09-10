@@ -119,3 +119,13 @@ function reverseString(str) {
 }
 let originalString = "hello";
 
+function randomNumbers(size, min, max) {
+  const numbers = Array.from({ length: size }, () => Math.floor(Math.random() * (max - min + 1)) + min);
+  console.log("Random Numbers:", numbers);
+
+  const sorted = [...numbers].sort((a, b) => a - b);
+  console.log("Sorted Numbers:", sorted);
+
+  const average = sorted.reduce((acc, num) => acc + num, 0) / sorted.length;
+  console.log("Average:", average);
+}
