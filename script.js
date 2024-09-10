@@ -129,3 +129,5 @@ function randomNumbers(size, min, max) {
   const average = sorted.reduce((acc, num) => acc + num, 0) / sorted.length;
   console.log("Average:", average);
 }
+
+randomNumbers(5, 1, 50);
