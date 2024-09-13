@@ -131,3 +131,7 @@ function randomNumbers(size, min, max) {
 }
 
 randomNumbers(5, 1, 50);
+
+function square(num) {
+  return num * num;
+}
