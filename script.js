@@ -135,3 +135,7 @@ randomNumbers(5, 1, 50);
 function square(num) {
   return num * num;
 }
+
+console.log(square(4)); 
+
+const isEven = num => num % 2 === 0;
