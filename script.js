@@ -139,3 +139,7 @@ function square(num) {
 console.log(square(4)); 
 
 const isEven = num => num % 2 === 0;
+
+
+console.log(isEven(10)); 
+console.log(isEven(7)); 
