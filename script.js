@@ -131,4 +131,3 @@ function randomNumbers(size, min, max) {
 }
 
 randomNumbers(5, 1, 50);
-const range = average + sorted;
