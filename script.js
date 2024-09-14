@@ -140,3 +140,12 @@ console.log(square(4));
 
 const isEven = num => num % 2 === 0;
 
+
+function sum(a, b) {
+  return a + b;
+}
+
+function findMax(arr) {
+  return Math.max(...arr);
+}
+
