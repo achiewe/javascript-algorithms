@@ -145,7 +145,11 @@ function sum(a, b) {
   return a + b;
 }
 
+
+
 function findMax(arr) {
   return Math.max(...arr);
 }
 
+
+const arrayNums = [10, 5, 8, 3, 12];
