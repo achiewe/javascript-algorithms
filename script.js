@@ -155,3 +155,4 @@ function findMax(arr) {
 const arrayNums = [10, 5, 8, 3, 12];
 const maxNumber = findMax(arrayNums);
 console.log(maxNumber);
+const fullDigits = 20 + 15;
