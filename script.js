@@ -163,5 +163,6 @@ const result = capitalizedWords.join(" ");
 console.log(result); 
 
 function removeItems(arr, startIndex, deleteCount) {
-
+ const removedItems = arr.splice(startIndex, deleteCount);
+ return removedItems;
 }
