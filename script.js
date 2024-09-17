@@ -169,3 +169,5 @@ function removeItems(arr, startIndex, deleteCount) {
 
 const fruits = ['Apple', 'Banana', 'Orange', 'Mango', 'Grapes'];
 const removedFruits = removeItems(fruits, 1, 2);
+console.log(removedFruits); 
+console.log(fruits);
