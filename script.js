@@ -166,3 +166,6 @@ function removeItems(arr, startIndex, deleteCount) {
  const removedItems = arr.splice(startIndex, deleteCount);
  return removedItems;
 }
+
+const fruits = ['Apple', 'Banana', 'Orange', 'Mango', 'Grapes'];
+const removedFruits = removeItems(fruits, 1, 2);
