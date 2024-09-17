@@ -161,3 +161,7 @@ for (let i = 0; i < words.length; i++) {
 }
 const result = capitalizedWords.join(" ");
 console.log(result); 
+
+function removeItems(arr, startIndex, deleteCount) {
+
+}
