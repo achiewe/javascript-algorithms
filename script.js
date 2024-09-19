@@ -171,3 +171,19 @@ const fruits = ['Apple', 'Banana', 'Orange', 'Mango', 'Grapes'];
 const removedFruits = removeItems(fruits, 1, 2);
 console.log(removedFruits); 
 console.log(fruits);  
+
+
+function generateRandomPassword(length) {
+  const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+[]{}|;:,.<>?";
+  let password = '';
+
+  for (let i = 0; i < length; i++) {
+    const randomIndex = Math.floor(Math.random() * chars.length);
+    password += chars[randomIndex];
+  }
+
+  return password;
+}
+
+const randomPassword = generateRandomPassword(12); // Generate a 12-character random password
+console.log("Your random password is:", randomPassword);
