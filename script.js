@@ -187,3 +187,17 @@ function generateRandomPassword(length) {
 
 const randomPassword = generateRandomPassword(12); // Generate a 12-character random password
 console.log("Your random password is:", randomPassword);
+
+
+function calculateArea(length, width) {
+  
+  let area = length * width;
+
+  if (area > 50) {
+      console.log("The area is large: " + area + " square units.");
+  } else {
+      console.log("The area is small: " + area + " square units.");
+  }
+
+  return area;
+}
