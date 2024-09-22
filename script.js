@@ -212,3 +212,5 @@ for (let i = 1; i < numbers.length; i++) {
         maxNumber = numbers[i];
     }
 }
+
+console.log("The largest number is:", maxNumber);
