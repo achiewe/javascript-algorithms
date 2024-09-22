@@ -201,3 +201,6 @@ function calculateArea(length, width) {
 
   return area;
 }
+
+
+const numseb = [10, 5, 8, 22, 17, 3, 15];
