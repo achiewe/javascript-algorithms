@@ -218,5 +218,19 @@ console.log("The largest number is:", maxNumber);
 function snailWillReachEnd(x, y, z) {
   const minutesInYear = 525600;
   let snailPosition = 0;  
-  let totalLength = x;    
+  let totalLength = x; 
+  
+  for (let minute = 1; minute <= minutesInYear; minute++) {
+    snailPosition += (y / totalLength) * totalLength;
+    if (snailPosition >= totalLength) {
+        return true;
+    }
+
+   
+    totalLength += z;
+}
+
+
+return false;
+
 }
