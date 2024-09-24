@@ -216,5 +216,7 @@ for (let i = 1; i < numbers.length; i++) {
 console.log("The largest number is:", maxNumber);
 
 function snailWillReachEnd(x, y, z) {
-  
+  const minutesInYear = 525600;
+  let snailPosition = 0;  
+  let totalLength = x;    
 }
