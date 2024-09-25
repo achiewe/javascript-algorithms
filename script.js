@@ -255,3 +255,7 @@ function nextHappyYear(year) {
 
   return year;
 }
+
+console.log(nextHappyYear(7712)); 
+console.log(nextHappyYear(8989)); 
+console.log(nextHappyYear(1001));
