@@ -239,3 +239,7 @@ return false;
 console.log(snailWillReachEnd(10, 2, 1));        
 console.log(snailWillReachEnd(100, 1, 2));       
 console.log(snailWillReachEnd(100000, 0.1, 0.05));
+
+function nextHappyYear(year) {
+  
+}
