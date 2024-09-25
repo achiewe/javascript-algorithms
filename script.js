@@ -246,4 +246,12 @@ function nextHappyYear(year) {
     const yearSet = new Set(yearStr);
     return yearStr.length === yearSet.size;
   };
+
+  year++;
+
+  while (!hasDistinctDigits(year)) {
+    year++;
+  }
+
+  return year;
 }
