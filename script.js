@@ -241,5 +241,9 @@ console.log(snailWillReachEnd(100, 1, 2));
 console.log(snailWillReachEnd(100000, 0.1, 0.05));
 
 function nextHappyYear(year) {
-  
+  const hasDistinctDigits = (year) => {
+    const yearStr = year.toString();
+    const yearSet = new Set(yearStr);
+    return yearStr.length === yearSet.size;
+  };
 }
