@@ -268,4 +268,8 @@ function trilingualDemocracy(languages) {
     I: 0, 
     K: 0 
   }
+
+  for (let lang of languages) {
+    counts[lang]++;
+  }
 }
