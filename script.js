@@ -272,4 +272,8 @@ function trilingualDemocracy(languages) {
   for (let lang of languages) {
     counts[lang]++;
   }
+
+  if (counts.D === 3 || counts.F === 3 || counts.I === 3 || counts.K === 3) {
+    return languages[0]; 
+  }
 }
