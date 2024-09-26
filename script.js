@@ -262,5 +262,10 @@ console.log(nextHappyYear(1001));
 
 
 function trilingualDemocracy(languages) {
-  
+  const counts = {
+    D: 0, 
+    F: 0, 
+    I: 0, 
+    K: 0 
+  }
 }
