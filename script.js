@@ -259,3 +259,8 @@ function nextHappyYear(year) {
 console.log(nextHappyYear(7712)); 
 console.log(nextHappyYear(8989)); 
 console.log(nextHappyYear(1001));
+
+
+function trilingualDemocracy(languages) {
+  
+}
