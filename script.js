@@ -282,4 +282,14 @@ function trilingualDemocracy(languages) {
       return lang; 
     }
   }
+
+    if (counts.D === 1 && counts.F === 1 && counts.I === 1) {
+    return 'K';
+  } else if (counts.D === 1 && counts.F === 1 && counts.K === 1) {
+    return 'I';
+  } else if (counts.D === 1 && counts.I === 1 && counts.K === 1) {
+    return 'F'; 
+  } else if (counts.F === 1 && counts.I === 1 && counts.K === 1) {
+    return 'D'; 
+  }
 }
