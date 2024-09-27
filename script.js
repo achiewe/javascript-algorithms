@@ -293,3 +293,7 @@ function trilingualDemocracy(languages) {
     return 'D'; 
   }
 }
+
+console.log(trilingualDemocracy("FFF"));
+console.log(trilingualDemocracy("IIK")); 
+console.log(trilingualDemocracy("DFK")); 
