@@ -304,3 +304,6 @@ console.log(trilingualDemocracy("DFK"));
 function wordValue(word) {
   return [...word].reduce((sum, char) => sum + (char.charCodeAt(0) - 'a'.charCodeAt(0) + 1), 0);
 }
+
+console.log(wordValue('love'));      
+console.log(wordValue('friendship'));
