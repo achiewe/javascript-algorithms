@@ -297,3 +297,10 @@ function trilingualDemocracy(languages) {
 console.log(trilingualDemocracy("FFF"));
 console.log(trilingualDemocracy("IIK")); 
 console.log(trilingualDemocracy("DFK")); 
+
+
+
+
+function wordValue(word) {
+  
+}
