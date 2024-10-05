@@ -15,3 +15,7 @@ function cuckooTime(initial_time, n) {
     let currentHours = initialHours;
     let currentMinutes = initialMinutes;
 }
+
+function findParetoFront(points) {
+    
+}
