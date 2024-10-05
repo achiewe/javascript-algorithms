@@ -17,5 +17,21 @@ function cuckooTime(initial_time, n) {
 }
 
 function findParetoFront(points) {
-    
+    let paretoFront = new Set();
+
+    points.forEach((point, index) => {
+        let isDominated = false;
+
+        points.forEach((otherPoint, otherIndex) => {
+            if (index !== otherIndex && dominates(otherPoint, point)) {
+                isDominated = true;
+            }
+        });
+
+        if (!isDominated) {
+            paretoFront.add(point);
+        }
+    });
+
+    return paretoFront;
 }
