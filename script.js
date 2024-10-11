@@ -35,3 +35,16 @@ function findParetoFront(points) {
 
     return paretoFront;
 }
+
+function getRandomJoke() {
+    const jokes = [
+      "Why don't scientists trust atoms? Because they make up everything!",
+      "What do you call fake spaghetti? An impasta!",
+      "Why did the math book look sad? Because it had too many problems.",
+      "Why don't skeletons fight each other? They don't have the guts!",
+      "What did the ocean say to the beach? Nothing, it just waved."
+    ];
+  
+    const randomIndex = Math.floor(Math.random() * jokes.length);
+    return jokes[randomIndex];
+  }
