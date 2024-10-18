@@ -6,9 +6,6 @@ function vaporwave(sentence) {
         .join('  '); 
 }
 
-console.log(vaporwave("Lets go to the movies")); 
-console.log(vaporwave("Why isn't my code working?"));
-
 
 
 
