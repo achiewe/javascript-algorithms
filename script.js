@@ -6,6 +6,8 @@ function areYouPlayingBanjo(name) {
       }
 }
 
+console.log(areYouPlayingBanjo("Rachel")); 
+console.log(areYouPlayingBanjo("Mark"));
 
 
 
