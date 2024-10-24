@@ -16,4 +16,6 @@ function chineseZodiac(year) {
  
   const cycleYear = year - 1924;
   const animal = animals[cycleYear % 12];
+  const element = elements[Math.floor((cycleYear % 10) / 2)];
+  return `${element} ${animal}`;
 }
