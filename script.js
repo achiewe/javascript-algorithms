@@ -19,3 +19,7 @@ function chineseZodiac(year) {
   const element = elements[Math.floor((cycleYear % 10) / 2)];
   return `${element} ${animal}`;
 }
+
+console.log(chineseZodiac(1998));
+console.log(chineseZodiac(2024));
+console.log(chineseZodiac(1984));
