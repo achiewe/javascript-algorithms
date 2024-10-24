@@ -12,4 +12,8 @@ console.log(areYouPlayingBanjo("Mark"));
 
 const animals = ["Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat", "Monkey", "Rooster", "Dog", "Pig"];
 const elements = ["Wood", "Fire", "Earth", "Metal", "Water"];
-
+function chineseZodiac(year) {
+ 
+  const cycleYear = year - 1924;
+  const animal = animals[cycleYear % 12];
+}
