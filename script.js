@@ -23,3 +23,7 @@ function chineseZodiac(year) {
 console.log(chineseZodiac(1998));
 console.log(chineseZodiac(2024));
 console.log(chineseZodiac(1984));
+
+function getRow(N) {
+  
+}
