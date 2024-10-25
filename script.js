@@ -26,5 +26,7 @@ console.log(chineseZodiac(1984));
 
 function getRow(N) {
   const rowIndex = (N - 1) % 26;
-  const startChar = String.fromCharCode(65 + rowIndex); 
-}
+  const startChar = String.fromCharCode(65 + rowIndex);
+  const remainingPart = String.fromCharCode(65 + rowIndex + 1).padEnd(26 - (rowIndex + 1), '', (i) => String.fromCharCode(65 + i));
+  return repeatingPart + remainingPart;
+} 
