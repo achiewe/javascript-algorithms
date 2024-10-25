@@ -30,3 +30,8 @@ function getRow(N) {
   const remainingPart = String.fromCharCode(65 + rowIndex + 1).padEnd(26 - (rowIndex + 1), '', (i) => String.fromCharCode(65 + i));
   return repeatingPart + remainingPart;
 } 
+
+console.log(getRow(1));  
+console.log(getRow(2));  
+console.log(getRow(26)); 
+console.log(getRow(27));
