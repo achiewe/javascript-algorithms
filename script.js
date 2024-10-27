@@ -31,7 +31,3 @@ function getRow(N) {
   return repeatingPart + remainingPart;
 } 
 
-console.log(getRow(1));  
-console.log(getRow(2));  
-console.log(getRow(26)); 
-console.log(getRow(27));
