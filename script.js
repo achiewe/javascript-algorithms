@@ -31,3 +31,6 @@ function getRow(N) {
   return repeatingPart + remainingPart;
 } 
 
+function rockPaperScissors(player1, player2) {
+  
+}
