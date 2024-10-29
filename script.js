@@ -43,3 +43,8 @@ function rockPaperScissors(player1, player2) {
     return "Player 2 won!";
   }
 }
+
+
+console.log(rockPaperScissors("scissors", "paper")); 
+console.log(rockPaperScissors("scissors", "rock")); 
+console.log(rockPaperScissors("paper", "paper"));
