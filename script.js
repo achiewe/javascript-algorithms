@@ -45,6 +45,3 @@ function rockPaperScissors(player1, player2) {
 }
 
 
-console.log(rockPaperScissors("scissors", "paper")); 
-console.log(rockPaperScissors("scissors", "rock")); 
-console.log(rockPaperScissors("paper", "paper"));
