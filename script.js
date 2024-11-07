@@ -45,3 +45,4 @@ function rockPaperScissors(player1, player2) {
 }
 
 
+function findOutlier(arr) {}
