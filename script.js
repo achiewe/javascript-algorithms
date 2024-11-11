@@ -53,3 +53,6 @@ function findOutlier(arr) {
 
 const result1 = findOutlier([2, 4, 0, 100, 4, 11, 2602, 36]);
 const result2 = findOutlier([160, 3, 1719, 19, 11, 13, -21]);
+
+console.log(result1);
+console.log(result2);
