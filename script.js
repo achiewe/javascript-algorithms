@@ -48,4 +48,5 @@ function rockPaperScissors(player1, player2) {
 function findOutlier(arr) {
   const majorityIsEven = 
   [arr[0], arr[1], arr[2]].filter(num => num % 2 === 0).length >= 2;
+  return arr.find(num => (num % 2 === 0) !== majorityIsEven);
 }
