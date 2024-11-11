@@ -50,3 +50,6 @@ function findOutlier(arr) {
   [arr[0], arr[1], arr[2]].filter(num => num % 2 === 0).length >= 2;
   return arr.find(num => (num % 2 === 0) !== majorityIsEven);
 }
+
+const result1 = findOutlier([2, 4, 0, 100, 4, 11, 2602, 36]);
+const result2 = findOutlier([160, 3, 1719, 19, 11, 13, -21]);
