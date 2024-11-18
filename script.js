@@ -63,3 +63,8 @@ function areAnagrams(str1, str2) {
 
   return normalize(str1) === normalize(str2);
 }
+
+
+console.log(areAnagrams("foefet", "toffee")); 
+console.log(areAnagrams("Buckethead", "DeathCubeK")); 
+console.log(areAnagrams("hello", "world")); 
