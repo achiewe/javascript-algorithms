@@ -56,3 +56,8 @@ const result2 = findOutlier([160, 3, 1719, 19, 11, 13, -21]);
 
 console.log(result1);
 console.log(result2);
+
+
+function areAnagrams(str1, str2) {
+  
+}
