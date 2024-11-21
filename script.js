@@ -84,3 +84,5 @@ function getPrimes(max) {
     }
     return primes;
 }
+
+console.log(getPrimes(11));
