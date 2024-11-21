@@ -68,3 +68,7 @@ function areAnagrams(str1, str2) {
 console.log(areAnagrams("foefet", "toffee")); 
 console.log(areAnagrams("Buckethead", "DeathCubeK")); 
 console.log(areAnagrams("hello", "world")); 
+
+function getPrimes(max) {
+  
+}
