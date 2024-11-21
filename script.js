@@ -70,5 +70,5 @@ console.log(areAnagrams("Buckethead", "DeathCubeK"));
 console.log(areAnagrams("hello", "world")); 
 
 function getPrimes(max) {
-  
+  if (max < 2) return []; 
 }
