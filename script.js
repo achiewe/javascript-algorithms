@@ -88,4 +88,7 @@ function getPrimes(max) {
 console.log(getPrimes(11));
 
 
-function eqAll(list) {}
+function eqAll(list) {
+  if (list === null || list === undefined) return true; 
+  const arr = Array.isArray(list) ? list : [...list];
+}
