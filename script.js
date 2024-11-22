@@ -91,4 +91,7 @@ console.log(getPrimes(11));
 function eqAll(list) {
   if (list === null || list === undefined) return true; 
   const arr = Array.isArray(list) ? list : [...list];
+  if (arr.length === 0) return true;
+  const firstElement = arr[0];
+  return arr.every(element => element === firstElement);
 }
