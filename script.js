@@ -86,3 +86,6 @@ function getPrimes(max) {
 }
 
 console.log(getPrimes(11));
+
+
+function eqAll(list) {}
