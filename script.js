@@ -96,7 +96,3 @@ function eqAll(list) {
   return arr.every(element => element === firstElement);
 }
 
-console.log(eqAll("aaa")); 
-console.log(eqAll("abc"));
-console.log(eqAll([0, 0, 0])); 
-console.log(eqAll([0, 1, 2])); 
