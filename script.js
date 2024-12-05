@@ -115,5 +115,7 @@ function hamming(n) {
               seen.add(next);
           }
       }
+
+      heap.sort((a, b) => a - b);
     }
 }
