@@ -96,3 +96,4 @@ function eqAll(list) {
   return arr.every(element => element === firstElement);
 }
 
+function hamming(n) {}
