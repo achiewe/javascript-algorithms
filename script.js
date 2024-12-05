@@ -119,3 +119,7 @@ function hamming(n) {
       heap.sort((a, b) => a - b);
     }
 }
+
+console.log(hamming(1));
+console.log(hamming(2)); 
+console.log(hamming(3));
