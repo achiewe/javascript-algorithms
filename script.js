@@ -96,4 +96,24 @@ function eqAll(list) {
   return arr.every(element => element === firstElement);
 }
 
-function hamming(n) {}
+function hamming(n) {
+  const factors = [2, 3, 5];
+  const heap = [1];
+  const seen = new Set([1]);
+
+  let count = 0;
+  while (heap.length) {
+     
+      const smallest = heap.shift();
+      count++;
+      if (count === n) return smallest;
+
+      for (const factor of factors) {
+          const next = smallest * factor;
+          if (!seen.has(next)) {
+              heap.push(next);
+              seen.add(next);
+          }
+      }
+    }
+}
