@@ -126,5 +126,5 @@ console.log(hamming(3));
 
 
 function isVampireNumber(fang1, fang2) {
-  
+  const product = fang1 * fang2;
 }
