@@ -123,3 +123,8 @@ function hamming(n) {
 console.log(hamming(1));
 console.log(hamming(2)); 
 console.log(hamming(3));
+
+
+function isVampireNumber(fang1, fang2) {
+  
+}
