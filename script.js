@@ -130,4 +130,6 @@ function isVampireNumber(fang1, fang2) {
 }
 
 
-function balancedParens(n) {}
+function balancedParens(n) {
+  const result = [];
+}
