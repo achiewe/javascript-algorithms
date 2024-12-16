@@ -165,3 +165,6 @@ function stantonMeasure(arr) {
   const stantonMeasure = arr.filter(num => num === countOfOnes).length;
   return stantonMeasure;
 }
+
+console.log(stantonMeasure([1, 4, 3, 2, 1, 2, 3, 2])); 
+console.log(stantonMeasure([1, 4, 1, 2, 11, 2, 3, 1]));
