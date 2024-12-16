@@ -147,6 +147,10 @@ function balancedParens(n) {
    
     if (close > open) {
       generate(current + ")", open, close - 1);
-    }
+    } 
   }
+
+  generate("", n, n);
+
+  return result;
 }
