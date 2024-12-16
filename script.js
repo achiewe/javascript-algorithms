@@ -159,3 +159,7 @@ console.log(balancedParens(0));
 console.log(balancedParens(1)); 
 console.log(balancedParens(2)); 
 console.log(balancedParens(3));
+
+function stantonMeasure(arr) {
+  
+}
