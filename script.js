@@ -162,4 +162,6 @@ console.log(balancedParens(3));
 
 function stantonMeasure(arr) {
   const countOfOnes = arr.filter(num => num === 1).length;
+  const stantonMeasure = arr.filter(num => num === countOfOnes).length;
+
 }
