@@ -132,4 +132,21 @@ function isVampireNumber(fang1, fang2) {
 
 function balancedParens(n) {
   const result = [];
+  function generate(current, open, close) {
+   
+    if (open === 0 && close === 0) {
+      result.push(current);
+      return;
+    }
+
+   
+    if (open > 0) {
+      generate(current + "(", open - 1, close);
+    }
+
+   
+    if (close > open) {
+      generate(current + ")", open, close - 1);
+    }
+  }
 }
