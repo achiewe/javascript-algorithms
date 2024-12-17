@@ -168,3 +168,9 @@ function stantonMeasure(arr) {
 
 console.log(stantonMeasure([1, 4, 3, 2, 1, 2, 3, 2])); 
 console.log(stantonMeasure([1, 4, 1, 2, 11, 2, 3, 1]));
+
+
+function Node(data) {
+  this.data = data;
+  this.next = null;
+}
