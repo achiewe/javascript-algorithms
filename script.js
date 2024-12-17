@@ -174,3 +174,10 @@ function Node(data) {
   this.data = data;
   this.next = null;
 }
+
+
+function push(head, data) {
+  const newNode = new Node(data);
+  newNode.next = head;
+  return newNode;      
+}
