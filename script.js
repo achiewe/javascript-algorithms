@@ -196,4 +196,15 @@ function generateBC(url, separator) {
   url = url.split(/[?#]/)[0];
   let parts = url.replace(/https?:\/\//, '').split('/');
   parts.shift();
+
+  const last = parts[parts.length - 1];
+  if (/^index\.(html|htm|php|asp)$/i.test(last)) {
+      parts.pop();
+  }
+
+  
+  let breadcrumb = [
+      `<a href="/">HOME</a>` 
+  ];
+
 }
