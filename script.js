@@ -194,5 +194,6 @@
 function generateBC(url, separator) {
   const ignoreWords = ["the", "of", "in", "from", "by", "with", "and", "or", "for", "to", "at", "a"];
   url = url.split(/[?#]/)[0];
-
+  let parts = url.replace(/https?:\/\//, '').split('/');
+  parts.shift();
 }
