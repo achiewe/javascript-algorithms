@@ -207,4 +207,15 @@ function generateBC(url, separator) {
       `<a href="/">HOME</a>` 
   ];
 
+  let path = "";
+  for (let i = 0; i < parts.length; i++) {
+      const part = parts[i];
+      const isLast = i === parts.length - 1;
+
+     
+      let text = part.replace(/\.[^/.]+$/, '') 
+                    .replace(/[-_]/g, ' ')      
+                    .toUpperCase();
+  }
+
 }
