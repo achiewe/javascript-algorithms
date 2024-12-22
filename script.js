@@ -218,4 +218,21 @@ function generateBC(url, separator) {
                     .toUpperCase();
   }
 
+  if (text.length > 30) {
+    // Acronymize long segments
+    text = part
+        .split('-')
+        .filter(word => !ignoreWords.includes(word))
+        .map(word => word[0])
+        .join('').toUpperCase();
+}
+
+if (isLast) {
+
+    breadcrumb.push(`<span class="active">${text}</span>`);
+} else {
+   
+    path += `/${part}/`;
+    breadcrumb.push(`<a href="${path}">${text}</a>`);
+}
 }
