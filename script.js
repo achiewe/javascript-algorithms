@@ -248,4 +248,7 @@ function solve(inputString) {
           charPositions[char].last = i;
         }
       }
+
+      let maxDifference = -1;
+      let mostValuableChar = '';
 }
