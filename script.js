@@ -239,4 +239,13 @@ if (isLast) {
 
 function solve(inputString) {
     const charPositions = {};
+
+    for (let i = 0; i < inputString.length; i++) {
+        const char = inputString[i];
+        if (!charPositions[char]) {
+          charPositions[char] = { first: i, last: i };
+        } else {
+          charPositions[char].last = i;
+        }
+      }
 }
