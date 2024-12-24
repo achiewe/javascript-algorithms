@@ -236,3 +236,5 @@ if (isLast) {
     breadcrumb.push(`<a href="${path}">${text}</a>`);
 }
 }
+
+function solve(inputString) {}
