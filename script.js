@@ -237,4 +237,6 @@ if (isLast) {
 }
 }
 
-function solve(inputString) {}
+function solve(inputString) {
+    const charPositions = {};
+}
