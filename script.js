@@ -251,4 +251,21 @@ function solve(inputString) {
 
       let maxDifference = -1;
       let mostValuableChar = '';
+
+      for (const char in charPositions) {
+        const { first, last } = charPositions[char];
+        const difference = last - first;
+    
+        // Update the most valuable character based on the problem rules
+        if (
+          difference > maxDifference ||
+          (difference === maxDifference && char < mostValuableChar)
+        ) {
+          maxDifference = difference;
+          mostValuableChar = char;
+        }
+      }
+    
+      return mostValuableChar;
+    
 }
