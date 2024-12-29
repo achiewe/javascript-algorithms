@@ -291,3 +291,7 @@ function knapsack(scores, weights, capacity) {
   return dp[n][capacity];
 
 }
+
+const scores = [15, 10, 9, 5];
+const weights = [1, 5, 3, 4];
+const capacity = 8;
