@@ -295,3 +295,6 @@ function knapsack(scores, weights, capacity) {
 const scores = [15, 10, 9, 5];
 const weights = [1, 5, 3, 4];
 const capacity = 8;
+
+const maxScore = knapsack(scores, weights, capacity);
+console.log("Maximum Score:", maxScore);
