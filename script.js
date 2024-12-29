@@ -272,5 +272,7 @@ function solve(inputString) {
 
 
 function knapsack(scores, weights, capacity) {
-  
+  const n = scores.length;
+
+  const dp = Array.from({ length: n + 1 }, () => Array(capacity + 1).fill(0));
 }
