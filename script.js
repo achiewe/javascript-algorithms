@@ -269,3 +269,8 @@ function solve(inputString) {
       return mostValuableChar;
     
 }
+
+
+function knapsack(scores, weights, capacity) {
+  
+}
