@@ -298,3 +298,6 @@ const capacity = 8;
 
 const maxScore = knapsack(scores, weights, capacity);
 console.log("Maximum Score:", maxScore);
+
+
+function convertMpgToKpl(mpg) {}
