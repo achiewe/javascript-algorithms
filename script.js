@@ -306,3 +306,7 @@ function convertMpgToKpl(mpg) {
   const kpl = (mpg * milesToKilometers) / gallonToLiters;
   return parseFloat(kpl.toFixed(2));
 }
+
+const mpg = 35; 
+console.log(`Miles per Imperial Gallon: ${mpg}`);
+console.log(`Kilometers per Liter: ${convertMpgToKpl(mpg)}`);
