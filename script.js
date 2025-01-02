@@ -300,4 +300,9 @@ const maxScore = knapsack(scores, weights, capacity);
 console.log("Maximum Score:", maxScore);
 
 
-function convertMpgToKpl(mpg) {}
+function convertMpgToKpl(mpg) {
+  const milesToKilometers = 1.609344;
+  const gallonToLiters = 4.54609188;
+  const kpl = (mpg * milesToKilometers) / gallonToLiters;
+  return parseFloat(kpl.toFixed(2));
+}
